@@ -1,0 +1,51 @@
+/* [project]/src/pages/ProductoPage/modules/ProductoPrecioBox.module.css [app-client] (css) */
+.ProductoPrecioBox-module__niAGmq__valorBox {
+  background: var(--color-azul-claro, #fef4f7);
+  border-radius: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  display: flex;
+}
+
+.ProductoPrecioBox-module__niAGmq__valorItem {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.ProductoPrecioBox-module__niAGmq__label {
+  color: var(--color-texto-semi-obscuro, #2e2e2e);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.ProductoPrecioBox-module__niAGmq__valor, .ProductoPrecioBox-module__niAGmq__precioFinal, .ProductoPrecioBox-module__niAGmq__ahorro {
+  font-size: 1.2rem;
+  font-family: var(--fuente-txt-decorado);
+  font-weight: 600;
+}
+
+.ProductoPrecioBox-module__niAGmq__ahorro {
+  color: var(--color-principal, #ef1e9f);
+}
+
+.ProductoPrecioBox-module__niAGmq__portalButton {
+  color: #fff;
+  background: var(--color-secundario, #6da7cc);
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  align-self: center;
+  padding: .8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: transform .2s;
+}
+
+.ProductoPrecioBox-module__niAGmq__portalButton:hover {
+  transform: scale(1.05);
+}
+
+/*# sourceMappingURL=src_pages_ProductoPage_modules_ProductoPrecioBox_module_css_bad6b30c._.single.css.map*/

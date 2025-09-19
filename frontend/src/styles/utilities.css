@@ -1,0 +1,69 @@
+/* ==========================================================================
+   CLASES PEQUEÑAS REUTILIZABLES
+   - Textos, formatos de texto
+   ========================================================================== */
+
+.titulo-sm {
+    font-size: 18px;
+}
+
+.titulo-md {
+    font-size: 36px;
+}
+
+.titulo-lg {
+    font-size: 50px;
+}
+
+.titulo-xl {
+    font-size: 64px;
+}
+
+.titulo-bi {
+    font-family: var(--fuente-titulo1);
+    background: var(--texto-secun-princ);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.titulo-1 {
+    font-family: var(--fuente-txt-decorado);
+    color: var(--color-texto-obscuro)
+}
+
+.titulo-2 {
+    font-family: var(--fuente-titulo1);
+    color: var(--color-texto-obscuro);
+
+    text-transform: uppercase;
+}
+
+.texto-1 {
+    font-family: var(--fuente-texto);
+    color: var(--color-texto-semi-obscuro);
+}
+
+.texto-dec {
+    font-family: var(--fuente-txt-decorado);
+    background: var(--texto-grad-sp);
+
+    text-align: center;
+
+    font-weight: bolder;
+    background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.txt-precio {
+    font-family: var(--fuente-btn);
+    color: var(--color-principal);
+}
+
+.microcopy {
+    font-family: var(--fuente-texto);
+    font-size: 0.9rem;
+    color: var(--color-texto-semi-claro);
+    margin-top: 1rem;
+}

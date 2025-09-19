@@ -1,0 +1,56 @@
+/* [project]/src/components/home/Hero.module.css [app-client] (css) */
+.Hero-module__s-6kkG__heroSection {
+  background-color: #f0f4f8;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.Hero-module__s-6kkG__heroSection .Hero-module__s-6kkG__titulo {
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+
+.Hero-module__s-6kkG__subtituloHero {
+  color: var(--color-texto-semi-obscuro);
+  text-align: left;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.Hero-module__s-6kkG__subtituloHero p {
+  font-size: 1.1rem;
+  font-family: var(--fuente-txt-decorado);
+}
+
+@media (max-width: 960px) {
+  .Hero-module__s-6kkG__heroSection {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .Hero-module__s-6kkG__heroSection > div {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  .Hero-module__s-6kkG__heroSection .Hero-module__s-6kkG__titulo {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .Hero-module__s-6kkG__subtituloHero {
+    text-align: center;
+  }
+
+  .Hero-module__s-6kkG__subtituloHero p {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=src_components_home_Hero_module_css_bad6b30c._.single.css.map*/

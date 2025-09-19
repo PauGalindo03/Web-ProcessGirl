@@ -1,0 +1,52 @@
+/* ===== Misión y Visión ===== */
+.misionVision {
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.mision,
+.vision {
+    flex: 1;
+    min-width: 250px;
+    background: var(--color-azul-claro);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1.5px solid var(--color-principal, #ef1e9f);
+    box-shadow: var(--shadow-blue);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+/* Hover minimalista */
+.mision:hover,
+.vision:hover {
+    transform: translateY(-3px);
+    border: 1.5px solid var(--color-secundario, #6da7cc);
+    box-shadow: var(--shadow-pink);
+    background-color: var(--color-rosa-clarito, #f0f8ff); /* tono un poco más claro */
+}
+
+.mision h2,
+.vision h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--color-principal, #ef1e9f);
+    margin-bottom: 0.5rem;
+}
+
+.mision p,
+.vision p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--texto-semi-obscuro, #2e2e2e);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .misionVision {
+        flex-direction: column;
+    }
+}

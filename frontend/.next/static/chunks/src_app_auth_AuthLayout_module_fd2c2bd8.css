@@ -1,0 +1,97 @@
+/* [project]/src/app/auth/AuthLayout.module.css [app-client] (css) */
+.AuthLayout-module__ZjRgsq__authContainer {
+  background: var(--color-azul-clarito);
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  padding: 2rem;
+  display: flex;
+}
+
+.AuthLayout-module__ZjRgsq__authBox {
+  background: #fff;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 750px;
+  margin: auto;
+  padding: 3rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+}
+
+.AuthLayout-module__ZjRgsq__authBoxRegistro {
+  width: 100%;
+  max-width: 90%;
+}
+
+.AuthLayout-module__ZjRgsq__authContent {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.AuthLayout-module__ZjRgsq__title {
+  text-align: center;
+  text-transform: initial;
+  margin-bottom: .5rem;
+  font-size: 40px;
+}
+
+.AuthLayout-module__ZjRgsq__subtitle {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.AuthLayout-module__ZjRgsq__cta {
+  text-align: center;
+  color: var(--color-texto-secundario);
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.AuthLayout-module__ZjRgsq__titulo {
+  color: var(--color-principal);
+  margin-bottom: 1rem;
+  font-size: 26px;
+}
+
+@media (max-width: 576px) {
+  .AuthLayout-module__ZjRgsq__title {
+    font-size: 30px;
+  }
+
+  .AuthLayout-module__ZjRgsq__subtitle {
+    font-size: 1rem;
+  }
+
+  .AuthLayout-module__ZjRgsq__titulo {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .AuthLayout-module__ZjRgsq__authContent {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .AuthLayout-module__ZjRgsq__authBox {
+    box-shadow: none;
+    background: none;
+    border-radius: 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .AuthLayout-module__ZjRgsq__authContainer {
+    place-items: initial;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+}
+
+/*# sourceMappingURL=src_app_auth_AuthLayout_module_fd2c2bd8.css.map*/

@@ -1,0 +1,47 @@
+/* [project]/src/components/common/media/ModalGaleria.module.css [app-client] (css) */
+.ModalGaleria-module__AOa8Vq__imageBox {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+
+.ModalGaleria-module__AOa8Vq__image {
+  -o-object-fit: contain;
+  object-fit: contain;
+  border-radius: 6px;
+  width: 100%;
+  height: auto;
+}
+
+.ModalGaleria-module__AOa8Vq__prev, .ModalGaleria-module__AOa8Vq__next {
+  cursor: pointer;
+  background: rgba(255, 255, 255, .8);
+  border: none;
+  border-radius: 50%;
+  padding: .5rem;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ModalGaleria-module__AOa8Vq__prev {
+  left: -2rem;
+}
+
+.ModalGaleria-module__AOa8Vq__next {
+  right: -2rem;
+}
+
+.ModalGaleria-module__AOa8Vq__counter {
+  color: #555;
+  text-align: center;
+  margin-top: .5rem;
+  font-size: .9rem;
+}
+
+/*# sourceMappingURL=src_components_common_media_ModalGaleria_module_css_bad6b30c._.single.css.map*/

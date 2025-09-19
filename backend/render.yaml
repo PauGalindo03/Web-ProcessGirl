@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: process-girl-backend
+    env: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://<tu-cluster>

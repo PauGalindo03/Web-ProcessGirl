@@ -1,0 +1,36 @@
+/* [project]/src/pages/ProductoPage/modules/ProductoDetalles.module.css [app-client] (css) */
+.ProductoDetalles-module__ElJYOq__detalles {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+}
+
+.ProductoDetalles-module__ElJYOq__titulo {
+  color: var(--color-principal, #ef1e9f);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.ProductoDetalles-module__ElJYOq__lista {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ProductoDetalles-module__ElJYOq__lista li {
+  border-bottom: 1px solid #eee;
+  padding: .5rem 0;
+  font-size: .95rem;
+}
+
+.ProductoDetalles-module__ElJYOq__lista li:last-child {
+  border-bottom: none;
+}
+
+.ProductoDetalles-module__ElJYOq__link {
+  color: var(--color-secundario, #6da7cc);
+  margin-right: .5rem;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=src_pages_ProductoPage_modules_ProductoDetalles_module_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/common/media/Overlay.module.css"],"sourcesContent":[".overlay {\r\n  position: fixed;\r\n  inset: 0;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  background-color: rgba(0, 0, 0, 0.5); /* negro semi */\r\n  z-index: 1000; /* debajo del modal */\r\n  opacity: 1;\r\n  transition: opacity 0.3s ease-in-out;\r\n}\r\n\r\n.overlay.visible {\r\n  opacity: 1;\r\n  overflow: hidden;\r\n  pointer-events: auto; /* ahora sí bloquea clicks */\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;AAaA"}}]
+}

@@ -1,0 +1,21 @@
+/* [project]/src/pages/PaquetePage/PaqueteHeader.module.css [app-client] (css) */
+.PaqueteHeader-module__4FsAda__header {
+  text-align: center;
+}
+
+.PaqueteHeader-module__4FsAda__titulo {
+  font-family: var(--fuente-texto);
+  margin-bottom: 5px;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.PaqueteHeader-module__4FsAda__descripcion {
+  color: var(--color-texto-semi-obscuro, #2e2e2e);
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/*# sourceMappingURL=src_pages_PaquetePage_PaqueteHeader_module_css_bad6b30c._.single.css.map*/

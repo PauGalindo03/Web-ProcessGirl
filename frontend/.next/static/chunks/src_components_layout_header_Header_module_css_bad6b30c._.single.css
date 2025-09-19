@@ -1,0 +1,81 @@
+/* [project]/src/components/layout/header/Header.module.css [app-client] (css) */
+.Header-module__lTtPNq__menuContainer {
+  background-color: var(--color-menus);
+  box-shadow: var(--shadow-blue);
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: .8rem 1rem;
+  display: flex;
+  position: relative;
+}
+
+.Header-module__lTtPNq__logoContainer {
+  align-items: center;
+  display: flex;
+}
+
+.Header-module__lTtPNq__logoContainer img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: auto;
+  max-height: 40px;
+}
+
+.Header-module__lTtPNq__logoContainer a {
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+}
+
+.Header-module__lTtPNq__abrirMenu {
+  display: none;
+}
+
+.Header-module__lTtPNq__accionesHeader {
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+@media (max-width: 960px) {
+  .Header-module__lTtPNq__abrirMenu {
+    color: var(--color-principal);
+    cursor: pointer;
+    font-size: 30px;
+    display: block;
+  }
+
+  .Header-module__lTtPNq__waveOnHover span {
+    display: inline-block;
+  }
+
+  .Header-module__lTtPNq__waveOnHover:hover span {
+    animation: .6s ease-in-out infinite Header-module__lTtPNq__wave;
+  }
+
+  .Header-module__lTtPNq__waveOnHover:hover span:first-child {
+    animation-delay: 0s;
+  }
+
+  .Header-module__lTtPNq__waveOnHover:hover span:nth-child(2) {
+    animation-delay: .15s;
+  }
+
+  .Header-module__lTtPNq__waveOnHover:hover span:nth-child(3) {
+    animation-delay: .3s;
+  }
+
+  @keyframes Header-module__lTtPNq__wave {
+    0%, 100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+}
+
+/*# sourceMappingURL=src_components_layout_header_Header_module_css_bad6b30c._.single.css.map*/

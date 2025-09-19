@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/pages/ProductoPage/modules/ProductoPrecioBox.module.css"],"sourcesContent":[".valorBox {\r\n  display: flex;\r\n  justify-content: center;\r\n  gap: 2rem;\r\n  flex-wrap: wrap;\r\n  background: var(--color-azul-claro, #fef4f7);\r\n  padding: 1rem;\r\n  border-radius: 8px;\r\n}\r\n\r\n.valorItem {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n\r\n.label {\r\n  font-size: 1.1rem;\r\n  font-weight: bold;\r\n  color: var(--color-texto-semi-obscuro, #2e2e2e);\r\n}\r\n\r\n.valor,\r\n.precioFinal,\r\n.ahorro {\r\n  font-size: 1.2rem;\r\n  font-family: var(--fuente-txt-decorado);\r\n  font-weight: 600;\r\n}\r\n\r\n.ahorro {\r\n  color: var(--color-principal, #ef1e9f);\r\n}\r\n\r\n.portalButton {\r\n  align-self: center;\r\n  padding: 0.8rem 1.5rem;\r\n  font-size: 1rem;\r\n  font-weight: bold;\r\n  color: white;\r\n  background: var(--color-secundario, #6da7cc);\r\n  border: none;\r\n  border-radius: 6px;\r\n  cursor: pointer;\r\n  transition: transform 0.2s ease;\r\n}\r\n\r\n.portalButton:hover {\r\n  transform: scale(1.05);\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;;;;AAUA;;;;;;AAMA;;;;;;AAMA;;;;;;AAQA;;;;AAIA;;;;;;;;;;;;;AAaA"}}]
+}

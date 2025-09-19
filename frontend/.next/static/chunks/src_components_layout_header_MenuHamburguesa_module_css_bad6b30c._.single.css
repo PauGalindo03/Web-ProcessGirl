@@ -1,0 +1,111 @@
+/* [project]/src/components/layout/header/MenuHamburguesa.module.css [app-client] (css) */
+.MenuHamburguesa-module__InfbGW__cerrarMenu, .MenuHamburguesa-module__InfbGW__logoMobile {
+  display: none;
+}
+
+.MenuHamburguesa-module__InfbGW__nav {
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.MenuHamburguesa-module__InfbGW__navLinks {
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+}
+
+.MenuHamburguesa-module__InfbGW__navLinks li a {
+  color: var(--color-texto-semi-obscuro);
+  font-family: var(--fuente-txt-decorado);
+  padding: .5rem 1rem;
+  text-decoration: none;
+  transition: color .3s;
+  position: relative;
+}
+
+.MenuHamburguesa-module__InfbGW__navLinks li a:hover {
+  text-shadow: 0 0 2px var(--color-menus), 0 0 4px var(--color-principal-acento);
+}
+
+.MenuHamburguesa-module__InfbGW__navLinks li a:after {
+  content: "";
+  background-color: var(--color-principal);
+  width: 0;
+  height: 2px;
+  transition: width .4s;
+  position: absolute;
+  bottom: -.5px;
+  left: 0;
+}
+
+.MenuHamburguesa-module__InfbGW__navLinks li a:hover:after {
+  width: 100%;
+}
+
+@media (max-width: 960px) {
+  .MenuHamburguesa-module__InfbGW__nav {
+    background-color: var(--color-sub-menus);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 1001;
+    width: 70%;
+    font-family: var(--fuente-texto);
+    border-bottom-right-radius: 5%;
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem;
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .MenuHamburguesa-module__InfbGW__navVisible {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    align-items: flex-start;
+  }
+
+  .MenuHamburguesa-module__InfbGW__navLinks {
+    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    font-size: 30px;
+  }
+
+  .MenuHamburguesa-module__InfbGW__logoMobile {
+    justify-content: left;
+    margin-bottom: 1rem;
+    display: flex;
+  }
+
+  .MenuHamburguesa-module__InfbGW__cerrarMenu {
+    align-self: flex-end;
+    font-size: 2rem;
+    display: flex;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .MenuHamburguesa-module__InfbGW__nav {
+    width: 100%;
+  }
+
+  .MenuHamburguesa-module__InfbGW__navLinks {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=src_components_layout_header_MenuHamburguesa_module_css_bad6b30c._.single.css.map*/

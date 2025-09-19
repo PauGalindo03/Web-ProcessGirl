@@ -1,0 +1,55 @@
+/* PARTE 4: Bloques CTA Dinámicos */
+.ctaBlock {
+  /* Nuevos estilos para mejorar la apariencia */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  width: 100%;
+}
+
+.ctaBlock h2 {
+  font-family: var(--fuente-txt-decorado);
+  color: var(--color-texto-obscuro);
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.ctaBlock .texto-1 {
+  max-width: 650px;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+/* Estilo para los párrafos generados por los saltos de línea */
+.ctaBlock .parrafo p {
+  margin-bottom: 1em;
+}
+
+.ctaBlock .parrafo p:last-child {
+  margin-bottom: 0;
+}
+
+.ctaRosa {
+  background-color: var(--color-rosa-clarito);
+}
+
+.ctaAzul {
+  background-color: var(--color-azul-claro);
+}
+
+@media (max-width: 960px) {
+  .ctaBlock h2 {
+    font-size: 25px;
+  }
+  .ctaBlock .parrafo p {
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}

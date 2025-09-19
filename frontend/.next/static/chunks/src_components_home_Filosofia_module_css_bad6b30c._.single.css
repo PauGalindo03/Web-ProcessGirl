@@ -1,0 +1,42 @@
+/* [project]/src/components/home/Filosofia.module.css [app-client] (css) */
+.Filosofia-module__74yLwq__filosofiaSection {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 2rem;
+  display: flex;
+}
+
+.Filosofia-module__74yLwq__titulo {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 40px;
+}
+
+.Filosofia-module__74yLwq__subtituloFilosofia {
+  font-family: var(--fuente-txt-decorado);
+  color: var(--color-principal);
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.Filosofia-module__74yLwq__textoFilosofia {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: .9rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 960px) {
+  .Filosofia-module__74yLwq__titulo {
+    font-size: 30px;
+  }
+
+  .Filosofia-module__74yLwq__subtituloFilosofia {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=src_components_home_Filosofia_module_css_bad6b30c._.single.css.map*/

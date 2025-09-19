@@ -1,0 +1,69 @@
+/* ==========================================================================
+   VARIABLES GLOBALES
+   - Colores, fuentes, sombras, tamaños
+   ========================================================================== */
+:root {
+    /* ... Colores ... */
+    /* Colores generales */
+    --color-principal: #ef1e9f;
+    --color-principal-acento: #fe61c2;
+    --color-principal-hover: #d81b60;
+    --color-secundario: #6da7cc;
+    --color-secundario-fuerte: #4487b1;
+
+    --color-rosa-clarito: #ffecf1;
+    --color-rosa-clarito2: #fbf6f8;
+    --color-azul-claro: #dff0f9;
+    --color-azul-clarito: #f5fbff;
+    --color-amarillo: #fff3cd;
+    --color-acento-amarillo: #ffdb4f;
+    --color-acento-vino: #5a004c;
+    --color-acento-verde: #7afa8e;
+    --color-verde: #92e89e;
+    --color-naranja: #ff9327;
+    --color-gris-claro: #b0adad;
+    --color-gris-azulado: #678da6;
+    --color-rojo-claro: #ff6b81;
+    --color-rojo-fuerte: #e63946;
+    /* Texto */
+    --color-texto-claro: #fbfafb;
+    --color-texto-semi-claro: #655f5f;
+    --color-texto-semi-obscuro: #2e2e2e;
+    --color-texto-obscuro: rgb(39, 37, 37);
+    --color-acento-obscuro: #b23f7c;
+    /* Menú y footer */
+    --color-menus: #f2c1d1;
+    --color-sub-menus: #fef4f7;
+    /*Texto bicolor*/
+    --texto-secun-princ: linear-gradient(135deg, var(--color-secundario) 50%, var(--color-principal) 50%);
+    --texto-grad-sp: linear-gradient(135deg, var(--color-secundario), var(--color-principal));
+
+    /* ... Tipografías ... */
+    --fuente-titulo1: titulo1;
+    --fuente-texto: texto;
+    --fuente-btn: btn;
+    --fuente-txt-decorado: texto-decorado;
+
+    /* ... Gradientes, sombras y bordes ...
+    /*uso: background: var(--gradiente-white-pink);*/
+    --gradiente-pink: linear-gradient(135deg, #f3f0f1, #f8b0c6);
+    --gradiente-pink-white: linear-gradient(135deg, #df3a7e, #f6c0d0);
+    --gradiente-white-pink: linear-gradient(135deg, #f6c0d0, #df3a7e);
+    --gradiente-blue-white: linear-gradient(135deg, #6da7cc, #d0ecfe);
+    --line-blue: linear-gradient(150deg, #ddeffa, #6da7cc);
+    --rad-blue: radial-gradient(circle, #ddeffa 20%, #6da7cc 80%);
+    --shadow-pink: 0 4px 8px rgba(203, 86, 141, 0.3);
+    --shadow-blue: 0 4px 8px rgba(143, 153, 244, 0.5);
+    --shadow-pink-grande: 0 10px 20px rgba(255, 105, 180, 0.3);
+
+    /* ... Spacing, sizing y breakpoints ... */
+    --space-sm: 4px;
+    --space-st: 8px;
+    --space-md: 16px;
+    --space-lg: 32px;
+
+    --size-sm: 16px;
+    --size-st: 20px;
+    --size-md: 30px;
+    --size-lg: 40px;
+}

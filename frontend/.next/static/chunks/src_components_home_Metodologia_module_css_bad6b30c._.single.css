@@ -1,0 +1,182 @@
+/* [project]/src/components/home/Metodologia.module.css [app-client] (css) */
+.Metodologia-module__rd8J1q__metodologiaSection {
+  text-align: center;
+  gap: 1.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.Metodologia-module__rd8J1q__titulo {
+  margin-bottom: 1rem;
+  font-size: 40px;
+}
+
+.Metodologia-module__rd8J1q__subtextoMetodologia {
+  max-width: 700px;
+  color: var(--color-texto-semi-obscuro);
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.Metodologia-module__rd8J1q__processFlowDiagram {
+  border: 2px dashed var(--color-principal-acento);
+  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+  margin: 3rem auto;
+  position: relative;
+}
+
+.Metodologia-module__rd8J1q__flowCenter {
+  background: var(--gradiente-blue-white);
+  color: #fff;
+  width: 130px;
+  height: 130px;
+  font-family: var(--fuente-titulo1);
+  box-shadow: var(--shadow-blue);
+  border-radius: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  animation: 3s ease-in-out infinite Metodologia-module__rd8J1q__pulse;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Metodologia-module__rd8J1q__flowCenter i {
+  opacity: .9;
+  margin-top: .3rem;
+  font-size: 1.3rem;
+  animation: 6s linear infinite Metodologia-module__rd8J1q__spin;
+}
+
+@keyframes Metodologia-module__rd8J1q__pulse {
+  0% {
+    box-shadow: var(--shadow-blue);
+    transform: translate(-50%, -50%)scale(1);
+  }
+
+  50% {
+    transform: translate(-50%, -50%)scale(1.05);
+    box-shadow: 0 8px 25px rgba(143, 153, 244, .7);
+  }
+
+  100% {
+    box-shadow: var(--shadow-blue);
+    transform: translate(-50%, -50%)scale(1);
+  }
+}
+
+@keyframes Metodologia-module__rd8J1q__spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Metodologia-module__rd8J1q__flowItem {
+  background-color: var(--color-rosa-clarito);
+  text-align: left;
+  border-radius: 16px;
+  width: 220px;
+  padding: 1rem;
+  font-size: .85rem;
+  line-height: 1.5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, .08);
+}
+
+.Metodologia-module__rd8J1q__flowItem strong {
+  color: var(--color-principal);
+  font-family: var(--fuente-txt-decorado);
+  margin-bottom: .5rem;
+  font-size: 1.1rem;
+  display: block;
+}
+
+.Metodologia-module__rd8J1q__item1 {
+  transform: translate(-50%, -50%)rotate(45deg)translate(225px)rotate(-45deg);
+}
+
+.Metodologia-module__rd8J1q__item2 {
+  transform: translate(-50%, -50%)rotate(135deg)translate(225px)rotate(-135deg);
+}
+
+.Metodologia-module__rd8J1q__item3 {
+  transform: translate(-50%, -50%)rotate(225deg)translate(225px)rotate(-225deg);
+}
+
+.Metodologia-module__rd8J1q__item4 {
+  transform: translate(-50%, -50%)rotate(315deg)translate(225px)rotate(-315deg);
+}
+
+.Metodologia-module__rd8J1q__flowArrow {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .Metodologia-module__rd8J1q__titulo {
+    font-size: 30px;
+  }
+
+  .Metodologia-module__rd8J1q__subtextoMetodologia {
+    font-size: 15px;
+  }
+
+  .Metodologia-module__rd8J1q__flowItem {
+    font-size: 13px;
+  }
+
+  .Metodologia-module__rd8J1q__flowItem strong {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Metodologia-module__rd8J1q__processFlowDiagram {
+    width: 70%;
+    height: auto;
+    box-shadow: none;
+    background: none;
+    border: none;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    position: static;
+  }
+
+  .Metodologia-module__rd8J1q__flowItem {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem;
+    display: flex;
+    position: static;
+    transform: none;
+  }
+
+  .Metodologia-module__rd8J1q__flowArrow {
+    color: var(--color-principal);
+    font-size: 1.5rem;
+    display: block;
+  }
+
+  .Metodologia-module__rd8J1q__flowCenter {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=src_components_home_Metodologia_module_css_bad6b30c._.single.css.map*/

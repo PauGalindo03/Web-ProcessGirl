@@ -1,0 +1,56 @@
+/* [project]/src/components/auth/LoginForm.module.css [app-client] (css) */
+.LoginForm-module__es-cSa__form {
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  display: flex;
+}
+
+.LoginForm-module__es-cSa__formInput {
+  border: 1px solid var(--color-borde-claro, #ccc);
+  background-color: var(--color-input-fondo, #f9f9f9);
+  border-radius: .5rem;
+  padding: .75rem 1rem;
+  font-size: 1rem;
+  transition: border-color .2s;
+}
+
+.LoginForm-module__es-cSa__formInput:focus {
+  border-color: var(--color-principal, #e91e63);
+  background-color: #fff;
+  outline: none;
+}
+
+.LoginForm-module__es-cSa__boton {
+  background-color: var(--color-principal, #e91e63);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color .2s;
+}
+
+.LoginForm-module__es-cSa__boton:hover {
+  background-color: var(--color-principal-hover, #d81b60);
+}
+
+.LoginForm-module__es-cSa__link {
+  text-align: center;
+  color: var(--color-principal, #e91e63);
+  font-size: .9rem;
+  text-decoration: underline;
+  transition: color .2s;
+}
+
+.LoginForm-module__es-cSa__link:hover {
+  color: var(--color-principal-hover, #d81b60);
+}
+
+.LoginForm-module__es-cSa__link {
+  margin-top: -.5rem;
+}
+
+/*# sourceMappingURL=src_components_auth_LoginForm_module_b30080da.css.map*/

@@ -1,0 +1,63 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "format": "prettier --write .",
+    "check": "pnpm lint && tsc --noEmit && pnpm build",
+    "update:check": "pnpm outdated",
+    "update:lint": "pnpm up eslint prettier typescript typescript-eslint @next/eslint-plugin-next eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-config-prettier --latest",
+    "update:core": "pnpm up next react react-dom swr axios framer-motion --latest",
+    "update:all": "pnpm up --latest"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,css,scss}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "bootstrap-icons": "^1.13.1",
+    "dompurify": "^3.2.6",
+    "framer-motion": "^12.23.12",
+    "next": "^15.5.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-useanimations": "^2.10.0",
+    "swr": "^2.3.6"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^15.5.3",
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/node": "24.3.1",
+    "@types/react": "19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "@types/sanitize-html": "^2.16.0",
+    "@typescript-eslint/eslint-plugin": "^8.44.0",
+    "@typescript-eslint/parser": "^8.44.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.35.0",
+    "eslint-config-next": "^15.5.3",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.6",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^4.1.13",
+    "tailwindcss-cli": "^0.1.2",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.44.0"
+  }
+}

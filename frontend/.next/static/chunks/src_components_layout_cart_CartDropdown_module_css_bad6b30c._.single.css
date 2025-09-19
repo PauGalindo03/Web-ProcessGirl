@@ -1,0 +1,102 @@
+/* [project]/src/components/layout/cart/CartDropdown.module.css [app-client] (css) */
+.CartDropdown-module__OZ01xG__abrirCarrito {
+  cursor: pointer;
+  background: none;
+  border: none;
+  place-items: center;
+  display: inline-block;
+  position: relative;
+}
+
+.CartDropdown-module__OZ01xG__cuentaFueraCarrito {
+  background-color: var(--color-principal);
+  color: #fff;
+  pointer-events: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+  font-weight: bold;
+  display: flex;
+  position: absolute;
+  top: 5px;
+  left: -4px;
+}
+
+.CartDropdown-module__OZ01xG__divCarrito {
+  background-color: var(--color-sub-menus);
+  font-family: var(--fuente-texto);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1001;
+  border-bottom-left-radius: 5%;
+  flex-direction: column;
+  width: 50%;
+  transition: opacity .3s, visibility .3s;
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.CartDropdown-module__OZ01xG__divCarrito.CartDropdown-module__OZ01xG__visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.CartDropdown-module__OZ01xG__cartHeader {
+  border-bottom: 2px solid var(--color-principal);
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+}
+
+.CartDropdown-module__OZ01xG__cerrarCarrito {
+  cursor: pointer;
+  font-size: 1.8em;
+  display: block;
+  position: absolute;
+  top: 13px;
+  right: 15px;
+}
+
+.CartDropdown-module__OZ01xG__carritoVacio {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  display: flex;
+}
+
+.CartDropdown-module__OZ01xG__botonGlowUp {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 960px) {
+  .CartDropdown-module__OZ01xG__cuentaFueraCarrito {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .CartDropdown-module__OZ01xG__cuentaFueraCarrito {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    top: 6px;
+    right: 5px;
+  }
+
+  .CartDropdown-module__OZ01xG__divCarrito {
+    border-bottom-left-radius: 0;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=src_components_layout_cart_CartDropdown_module_css_bad6b30c._.single.css.map*/

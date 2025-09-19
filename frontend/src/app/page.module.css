@@ -1,0 +1,7 @@
+/* styles/main.module.css */
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}

@@ -1,0 +1,35 @@
+/* ==========================================================================
+   FUENTES
+   - Fontface
+   ========================================================================== */
+
+@font-face {
+    /* Título */
+    font-family: titulo1;
+    src: url("/fonts/Forum/Forum-Regular.ttf");
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    /* Texto */
+    font-family: texto;
+    src: url("/fonts/Poppins/Poppins-Light.ttf");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    /* Texto decorado */
+    font-family: texto-decorado;
+    src: url("/fonts/Bellota/Bellota-Regular.ttf");
+    font-display: swap;
+
+}
+
+@font-face {
+    /* Botón */
+    font-family: btn;
+    src: url("/fonts/Zain/Zain-Bold.ttf");
+    font-display: swap;
+}

@@ -1,0 +1,69 @@
+/* Wrapper full-screen que centra su hijo */
+.modalWrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 1001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding opcional para separación en mobile */
+  padding: 1rem;
+}
+
+/* Caja blanca que crecerá según tamaño */
+.modalContent {
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  height: auto;
+  padding: 2rem;
+  width: 100%;           /* base para responsive */
+}
+
+/* Tamaño “lg”: entre 500px y 700px, adaptativo */
+.lg {
+  max-width: clamp(600px, 80vw, 900px);
+}
+
+/* Tamaño “xl”: entre 700px y 1000px, adaptativo */
+.xl {
+  max-width: clamp(800px, 90vw, 1200px);
+}
+
+/* Fullscreen cubre toda la ventana */
+.fullscreen {
+  max-width: 100vw;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+  padding: 0;
+}
+
+/* Botón de cierre en la esquina */
+.close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 576px) {
+  .modalWrapper {
+    padding: 0.5rem;
+  }
+  .modalContent {
+    padding: 1rem;
+    max-height: 85vh;
+  }
+  .close {
+    font-size: 1.25rem;
+  }
+}

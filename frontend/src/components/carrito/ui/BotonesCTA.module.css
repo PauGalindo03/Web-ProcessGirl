@@ -1,0 +1,76 @@
+/* ... Botones carrito ... */
+/* Contenedor principal de botones */
+.botonesCarrito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+/* Versión desktop: todo en una sola fila */
+.botonesHeader {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Los dos botones superiores */
+.botonesSuperiores {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: auto;
+}
+
+.botonesSuperiores button {
+  flex: 1;
+  /* ambos ocupan el mismo ancho */
+  min-width: 120px;
+  /* opcional para no hacerse muy chicos */
+}
+
+/* Botón invertir */
+.botonInvertir {
+  text-align: center;
+  font-size: 18px !important;
+  text-transform: uppercase;
+  flex: 1;
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  .botonesHeader {
+    flex-direction: column;
+    gap: 0;
+    /* quita el espacio entre bloques */
+    margin-bottom: 10px;
+  }
+
+  .botonesSuperiores {
+    order: 1;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+
+  .botonInvertir {
+    order: 2;
+    width: 65%;
+    margin-top: 0;
+    /* elimina el gap con los de arriba */
+  }
+}
+
+@media (max-width: 576px) {
+  .botonInvertir {
+    order: 2;
+    width: 65%;
+    margin-top: 0;
+    /* elimina el gap con los de arriba */
+  }
+}

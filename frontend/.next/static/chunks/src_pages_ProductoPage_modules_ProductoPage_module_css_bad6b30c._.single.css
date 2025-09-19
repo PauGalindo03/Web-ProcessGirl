@@ -1,0 +1,54 @@
+/* [project]/src/pages/ProductoPage/modules/ProductoPage.module.css [app-client] (css) */
+.ProductoPage-module__43jBFG__page {
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  display: flex;
+}
+
+.ProductoPage-module__43jBFG__grid {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  display: flex;
+}
+
+.ProductoPage-module__43jBFG__colIzquierda {
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+}
+
+.ProductoPage-module__43jBFG__colDerecha {
+  flex-direction: column;
+  flex: auto;
+  gap: 1.5rem;
+  display: flex;
+}
+
+.ProductoPage-module__43jBFG__testimonios {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .ProductoPage-module__43jBFG__grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ProductoPage-module__43jBFG__colIzquierda, .ProductoPage-module__43jBFG__colDerecha {
+    text-align: center;
+    flex: 100%;
+    align-items: center;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+
+  .ProductoPage-module__43jBFG__page {
+    padding-bottom: 5rem;
+  }
+}
+
+/*# sourceMappingURL=src_pages_ProductoPage_modules_ProductoPage_module_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,48 @@
+/* [project]/src/pages/SobreMiPage/Filosofia.module.css [app-client] (css) */
+.Filosofia-module__9MtDHW__misionVision {
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+}
+
+.Filosofia-module__9MtDHW__mision, .Filosofia-module__9MtDHW__vision {
+  background: var(--color-azul-claro);
+  border: 1.5px solid var(--color-principal, #ef1e9f);
+  min-width: 250px;
+  box-shadow: var(--shadow-blue);
+  border-radius: 8px;
+  flex: 1;
+  padding: 1.5rem;
+  transition: transform .25s, box-shadow .25s, background-color .25s;
+}
+
+.Filosofia-module__9MtDHW__mision:hover, .Filosofia-module__9MtDHW__vision:hover {
+  border: 1.5px solid var(--color-secundario, #6da7cc);
+  box-shadow: var(--shadow-pink);
+  background-color: var(--color-rosa-clarito, #f0f8ff);
+  transform: translateY(-3px);
+}
+
+.Filosofia-module__9MtDHW__mision h2, .Filosofia-module__9MtDHW__vision h2 {
+  color: var(--color-principal, #ef1e9f);
+  margin-bottom: .5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.Filosofia-module__9MtDHW__mision p, .Filosofia-module__9MtDHW__vision p {
+  color: var(--texto-semi-obscuro, #2e2e2e);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .Filosofia-module__9MtDHW__misionVision {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=src_pages_SobreMiPage_Filosofia_module_css_bad6b30c._.single.css.map*/

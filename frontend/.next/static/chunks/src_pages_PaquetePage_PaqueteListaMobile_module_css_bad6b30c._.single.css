@@ -1,0 +1,92 @@
+/* [project]/src/pages/PaquetePage/PaqueteListaMobile.module.css [app-client] (css) */
+.PaqueteListaMobile-module__gqxz6q__listaProductos {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+}
+
+.PaqueteListaMobile-module__gqxz6q__subtitulo {
+  color: var(--color-principal, #ef1e9f);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.PaqueteListaMobile-module__gqxz6q__listaProductos ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.PaqueteListaMobile-module__gqxz6q__itemProducto {
+  border-bottom: 1px solid #eee;
+}
+
+.PaqueteListaMobile-module__gqxz6q__itemProducto:last-child {
+  border-bottom: none;
+}
+
+.PaqueteListaMobile-module__gqxz6q__productoLink {
+  color: inherit;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: .8rem 0;
+  text-decoration: none;
+  display: flex;
+}
+
+.PaqueteListaMobile-module__gqxz6q__productoLink:hover {
+  background-color: rgba(0, 0, 0, .02);
+}
+
+.PaqueteListaMobile-module__gqxz6q__numero {
+  background: var(--color-principal, #ef1e9f);
+  color: #fff;
+  border-radius: 50%;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  font-weight: bold;
+  display: flex;
+}
+
+.PaqueteListaMobile-module__gqxz6q__infoProducto {
+  flex: 1;
+}
+
+.PaqueteListaMobile-module__gqxz6q__productoDesc {
+  color: var(--color-texto-semi-claro, #655f5f);
+  font-size: .9rem;
+}
+
+.PaqueteListaMobile-module__gqxz6q__productoImgRight {
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.PaqueteListaMobile-module__gqxz6q__portalButton {
+  color: #fff;
+  background: var(--color-secundario, #6da7cc);
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  margin-top: 1rem;
+  padding: .8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: transform .2s;
+}
+
+.PaqueteListaMobile-module__gqxz6q__portalButton:hover {
+  transform: scale(1.05);
+}
+
+/*# sourceMappingURL=src_pages_PaquetePage_PaqueteListaMobile_module_css_bad6b30c._.single.css.map*/

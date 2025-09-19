@@ -1,0 +1,157 @@
+/* PARTE 5: Metodología */
+.metodologiaSection {
+  gap: 1.5rem;
+  text-align: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.titulo {
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.subtextoMetodologia {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: var(--color-texto-semi-obscuro);
+}
+
+/* Diagrama */
+.processFlowDiagram {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  margin: 3rem auto;
+  border: 2px dashed var(--color-principal-acento);
+  border-radius: 50%;
+}
+
+/* Centro */
+.flowCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 130px;
+  height: 130px;
+  background: var(--gradiente-blue-white);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: var(--fuente-titulo1);
+  font-size: 1.6rem;
+  box-shadow: var(--shadow-blue);
+  animation: pulse 3s infinite ease-in-out;
+}
+
+.flowCenter i {
+  font-size: 1.3rem;
+  margin-top: 0.3rem;
+  opacity: 0.9;
+  animation: spin 6s linear infinite;
+}
+
+@keyframes pulse {
+  0% { transform: translate(-50%, -50%) scale(1); box-shadow: var(--shadow-blue); }
+  50% { transform: translate(-50%, -50%) scale(1.05); box-shadow: 0 8px 25px rgba(143, 153, 244, 0.7); }
+  100% { transform: translate(-50%, -50%) scale(1); box-shadow: var(--shadow-blue); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Items */
+.flowItem {
+  position: absolute;
+  background-color: var(--color-rosa-clarito);
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  width: 220px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  top: 50%;
+  left: 50%;
+  text-align: left;
+  transform: translate(-50%, -50%);
+}
+
+.flowItem strong {
+  color: var(--color-principal);
+  font-family: var(--fuente-txt-decorado);
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Posicionamiento circular corregido */
+/* Primero se centra con translate, luego se rota el radio, se traslada hacia afuera y se contra-rota el item */
+.item1 { transform: translate(-50%, -50%) rotate(45deg) translate(225px) rotate(-45deg); }
+.item2 { transform: translate(-50%, -50%) rotate(135deg) translate(225px) rotate(-135deg); }
+.item3 { transform: translate(-50%, -50%) rotate(225deg) translate(225px) rotate(-225deg); }
+.item4 { transform: translate(-50%, -50%) rotate(315deg) translate(225px) rotate(-315deg); }
+
+.flowArrow {
+  display: none; /* Oculto en desktop por defecto */
+}
+
+@media (max-width: 960px) {
+  .titulo {
+    font-size: 30px;
+  }
+
+  .subtextoMetodologia {
+    font-size: 15px;
+  }
+
+  .flowItem {
+    font-size: 13px;
+  }
+
+  .flowItem strong {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .processFlowDiagram {
+    position: static;
+    width: 70%;
+    height: auto;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Aumentar el espacio para que quepa la flecha */
+    box-shadow: none;
+    background: none;
+    margin-top: 2rem;
+  }
+
+  .flowItem {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flowArrow {
+    display: block;
+    color: var(--color-principal);
+    font-size: 1.5rem;
+  }
+
+  .flowCenter {
+    display: none; /* Ocultar el centro en móvil para simplificar */
+  }
+}

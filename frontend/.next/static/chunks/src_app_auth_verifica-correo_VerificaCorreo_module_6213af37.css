@@ -1,0 +1,42 @@
+/* [project]/src/app/auth/verifica-correo/VerificaCorreo.module.css [app-client] (css) */
+.VerificaCorreo-module__NepKKG__container {
+  text-align: center;
+  background: #fff;
+  border-radius: 1rem;
+  max-width: 500px;
+  margin: auto;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+}
+
+.VerificaCorreo-module__NepKKG__input {
+  border: 1px solid var(--color-borde-claro);
+  border-radius: .5rem;
+  width: 100%;
+  margin-top: 1rem;
+  padding: .75rem 1rem;
+  font-size: 1rem;
+}
+
+.VerificaCorreo-module__NepKKG__boton {
+  background-color: var(--color-principal);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: .5rem;
+  margin-top: 1rem;
+  padding: .75rem 1.5rem;
+}
+
+.VerificaCorreo-module__NepKKG__mensaje {
+  color: var(--color-texto-secundario);
+  margin-top: 1rem;
+}
+
+.VerificaCorreo-module__NepKKG__alertaUrgente {
+  color: #c00;
+  margin-top: .5rem;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=src_app_auth_verifica-correo_VerificaCorreo_module_6213af37.css.map*/

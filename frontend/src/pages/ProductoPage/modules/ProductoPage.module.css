@@ -1,0 +1,54 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* 🖥 Escritorio */
+.grid {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.colIzquierda {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.colDerecha {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* 💬 Testimonios */
+.testimonios {
+  margin-top: 2rem;
+}
+
+/* 📱 Mobile */
+@media screen and (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+    align-items: center;;
+  }
+
+  .colIzquierda,
+  .colDerecha {
+    flex: 1 1 100%;
+    align-items: center;
+    text-align: center;
+    max-width:fit-content;
+  }
+
+  .page {
+    padding-bottom: 5rem; /* espacio para CTA flotante */
+  }
+}

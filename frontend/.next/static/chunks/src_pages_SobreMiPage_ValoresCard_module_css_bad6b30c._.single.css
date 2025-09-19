@@ -1,0 +1,47 @@
+/* [project]/src/pages/SobreMiPage/ValoresCard.module.css [app-client] (css) */
+.ValoresCard-module__Gv2Fnq__valoresSection {
+  padding: 2rem 1rem;
+}
+
+.ValoresCard-module__Gv2Fnq__title {
+  color: var(--color-principal, #ef1e9f);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.ValoresCard-module__Gv2Fnq__grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  display: grid;
+}
+
+.ValoresCard-module__Gv2Fnq__card {
+  text-align: left;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  transition: transform .2s, box-shadow .2s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .05);
+}
+
+.ValoresCard-module__Gv2Fnq__card h3 {
+  color: var(--color-secundario, #6da7cc);
+  margin-bottom: .5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.ValoresCard-module__Gv2Fnq__text {
+  color: var(--texto-semi-obscuro, #2e2e2e);
+  font-size: .95rem;
+  line-height: 1.5;
+}
+
+.ValoresCard-module__Gv2Fnq__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+}
+
+/*# sourceMappingURL=src_pages_SobreMiPage_ValoresCard_module_css_bad6b30c._.single.css.map*/

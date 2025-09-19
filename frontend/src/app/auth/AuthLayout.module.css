@@ -1,0 +1,107 @@
+/* src/app/auth/AuthLayout.module.css */
+.authContainer {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-azul-clarito);
+  padding: 2rem;
+  min-height: 100%;
+  width: 100%;
+}
+
+.authBox {
+  margin: auto;
+  /* 👈 esto lo centra verticalmente si hay espacio */
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  max-width: 750px;
+  width: 100%;
+}
+
+.authBoxRegistro {
+  max-width: 90%;
+  width: 100%;
+}
+
+.authContent {
+  /*Clase para children*/
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.title {
+  font-size: 40px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  text-transform: initial;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.cta {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--color-texto-secundario);
+}
+
+
+/* ==========================================================================
+  ESTILOS SUBPÁGINAS
+  ========================================================================== */
+.titulo {
+  /*Iniciar sesión, registrarse, etc... */
+  font-size: 26px;
+  color: var(--color-principal);
+  margin-bottom: 1rem;
+}
+
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .titulo {
+    font-size: 20px;
+  }
+}
+
+/* ------------------------------
+	Página de registro
+	------------------------------ */
+@media (max-width: 992px) {
+  .authContent {
+    /*Clase para children*/
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .authBox {
+    margin: 0;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .authContainer {
+    padding: 1rem;
+    place-items: initial;
+    align-items: center;
+    justify-content: center;
+  }
+}

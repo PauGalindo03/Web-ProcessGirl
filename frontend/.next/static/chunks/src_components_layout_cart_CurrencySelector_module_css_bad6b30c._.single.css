@@ -1,0 +1,68 @@
+/* [project]/src/components/layout/cart/CurrencySelector.module.css [app-client] (css) */
+.CurrencySelector-module__ydXxuq__wrapper {
+  font-family: var(--fuente-txt-decorado);
+  min-width: 55px;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+}
+
+.CurrencySelector-module__ydXxuq__selector {
+  background-color: var(--color-menus);
+  color: var(--color-texto-semi-obscuro);
+  border: 1px solid var(--color-principal);
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  min-width: 100%;
+  font-size: 1em;
+  transition: border-color .3s, box-shadow .3s;
+}
+
+.CurrencySelector-module__ydXxuq__selector:hover {
+  border-color: var(--color-principal-acento);
+  box-shadow: 0 0 4px var(--color-principal-acento);
+}
+
+.CurrencySelector-module__ydXxuq__selector:focus {
+  border-color: var(--color-principal);
+  box-shadow: 0 0 6px var(--color-principal);
+  outline: none;
+}
+
+.CurrencySelector-module__ydXxuq__options {
+  border: 1px solid var(--color-principal);
+  z-index: 10;
+  background: #fff;
+  border-radius: 8px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
+}
+
+.CurrencySelector-module__ydXxuq__show {
+  display: block;
+}
+
+.CurrencySelector-module__ydXxuq__options li {
+  color: #000;
+  cursor: pointer;
+  text-align: center;
+  background-color: #fff;
+  padding: 6px;
+  font-size: .75em;
+  transition: background .2s, color .2s;
+}
+
+.CurrencySelector-module__ydXxuq__options li:hover {
+  background-color: var(--color-sub-menus);
+  color: var(--color-texto-semi-obscuro);
+}
+
+/*# sourceMappingURL=src_components_layout_cart_CurrencySelector_module_css_bad6b30c._.single.css.map*/

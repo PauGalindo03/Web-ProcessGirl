@@ -1,0 +1,56 @@
+/* [project]/src/components/auth/RegisterForm.module.css [app-client] (css) */
+.RegisterForm-module__S7ujnq__form {
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  display: flex;
+}
+
+input {
+  border: 1px solid var(--color-borde-claro, #ccc);
+  background-color: var(--color-input-fondo, #f9f9f9);
+  border-radius: .5rem;
+  padding: .75rem 1rem;
+  font-size: 1rem;
+  transition: border-color .2s;
+}
+
+input:focus {
+  border-color: var(--color-principal, #e91e63);
+  background-color: #fff;
+  outline: none;
+}
+
+button {
+  background-color: var(--color-principal, #e91e63);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color .2s;
+}
+
+button:hover {
+  background-color: var(--color-principal-hover, #d81b60);
+}
+
+a {
+  text-align: center;
+  color: var(--color-principal, #e91e63);
+  font-size: .9rem;
+  text-decoration: underline;
+  transition: color .2s;
+}
+
+a:hover {
+  color: var(--color-principal-hover, #d81b60);
+}
+
+.RegisterForm-module__S7ujnq__link {
+  margin-top: -.5rem;
+}
+
+/*# sourceMappingURL=src_components_auth_RegisterForm_module_ce3dbb4b.css.map*/

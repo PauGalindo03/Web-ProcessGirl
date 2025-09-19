@@ -1,0 +1,103 @@
+/* [project]/src/pages/PaquetePage/PaqueteGridDesktop.module.css [app-client] (css) */
+.PaqueteGridDesktop-module__7iudLq__gridProductos {
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  display: flex;
+}
+
+.PaqueteGridDesktop-module__7iudLq__cardProducto {
+  cursor: pointer;
+  border-radius: 8px;
+  flex-shrink: 0;
+  min-width: 220px;
+  position: relative;
+  overflow: hidden;
+}
+
+.PaqueteGridDesktop-module__7iudLq__cardLink {
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+.PaqueteGridDesktop-module__7iudLq__cardImg {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  transition: transform .3s;
+  display: block;
+}
+
+.PaqueteGridDesktop-module__7iudLq__cardProducto:hover .PaqueteGridDesktop-module__7iudLq__cardImg {
+  transform: scale(1.05);
+}
+
+.PaqueteGridDesktop-module__7iudLq__cardOverlay {
+  color: #fff;
+  opacity: 0;
+  background: rgba(0, 0, 0, .75);
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  transition: opacity .3s;
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.PaqueteGridDesktop-module__7iudLq__cardProducto:hover .PaqueteGridDesktop-module__7iudLq__cardOverlay {
+  opacity: 1;
+}
+
+.PaqueteGridDesktop-module__7iudLq__cardOverlay h3 {
+  margin-bottom: .5rem;
+  font-size: 1.1rem;
+}
+
+.PaqueteGridDesktop-module__7iudLq__cardOverlay p {
+  margin: .2rem 0;
+}
+
+.PaqueteGridDesktop-module__7iudLq__cardDesc {
+  opacity: .9;
+  margin-top: .5rem;
+  font-size: .9rem;
+}
+
+@media (max-width: 1024px) {
+  .PaqueteGridDesktop-module__7iudLq__cardImg {
+    height: 260px;
+  }
+}
+
+@media (max-width: 992px) {
+  .PaqueteGridDesktop-module__7iudLq__gridProductos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .PaqueteGridDesktop-module__7iudLq__cardProducto {
+    width: 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .PaqueteGridDesktop-module__7iudLq__cardProducto {
+    width: 100%;
+  }
+
+  .PaqueteGridDesktop-module__7iudLq__cardImg {
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=src_pages_PaquetePage_PaqueteGridDesktop_module_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,144 @@
+/* [project]/src/components/common/media/AnimatedIcon.module.css [app-client] (css) */
+.AnimatedIcon-module__ORm0ia__rosa {
+  color: var(--color-principal);
+  transition: color .2s;
+}
+
+.AnimatedIcon-module__ORm0ia__rebote {
+  will-change: transform;
+  animation: .3s AnimatedIcon-module__ORm0ia__rebote;
+}
+
+@keyframes AnimatedIcon-module__ORm0ia__rebote {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.4);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.AnimatedIcon-module__ORm0ia__rotateOnHover {
+  transition: transform .3s;
+}
+
+.AnimatedIcon-module__ORm0ia__rotateOnHover:hover {
+  transform: rotate(90deg);
+}
+
+.AnimatedIcon-module__ORm0ia__bounceOnHover {
+  transition: transform .3s;
+}
+
+.AnimatedIcon-module__ORm0ia__bounceOnHover:hover {
+  transform: translateY(-4px);
+}
+
+.AnimatedIcon-module__ORm0ia__spinOnHover {
+  transition: transform .5s;
+}
+
+.AnimatedIcon-module__ORm0ia__spinOnHover:hover {
+  transform: rotate(360deg);
+}
+
+.AnimatedIcon-module__ORm0ia__pulseOnHover {
+  transition: transform .3s;
+}
+
+.AnimatedIcon-module__ORm0ia__pulseOnHover:hover {
+  transform: scale(1.1);
+}
+
+.AnimatedIcon-module__ORm0ia__shakeOnHover {
+  animation: .4s AnimatedIcon-module__ORm0ia__shake;
+}
+
+@keyframes AnimatedIcon-module__ORm0ia__shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-3px);
+  }
+
+  50% {
+    transform: translateX(3px);
+  }
+
+  75% {
+    transform: translateX(-2px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.AnimatedIcon-module__ORm0ia__shakeOnHover:hover {
+  animation: .4s AnimatedIcon-module__ORm0ia__shake;
+}
+
+.AnimatedIcon-module__ORm0ia__glowOnHover {
+  transition: text-shadow .3s, color .3s;
+}
+
+.AnimatedIcon-module__ORm0ia__glowOnHover:hover {
+  color: var(--color-principal, #0d6efd);
+  text-shadow: 0 0 8px;
+}
+
+.AnimatedIcon-module__ORm0ia__liftOnHover {
+  transition: transform .3s, box-shadow .3s;
+}
+
+.AnimatedIcon-module__ORm0ia__liftOnHover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .15);
+}
+
+.AnimatedIcon-module__ORm0ia__wiggleOnHover {
+  animation: .4s AnimatedIcon-module__ORm0ia__wiggle;
+}
+
+@keyframes AnimatedIcon-module__ORm0ia__wiggle {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  75% {
+    transform: rotate(-6deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.AnimatedIcon-module__ORm0ia__wiggleOnHover:hover {
+  animation: .4s AnimatedIcon-module__ORm0ia__wiggle;
+}
+
+.AnimatedIcon-module__ORm0ia__zoomRotateOnHover {
+  transition: transform .4s;
+}
+
+.AnimatedIcon-module__ORm0ia__zoomRotateOnHover:hover {
+  transform: scale(1.2)rotate(10deg);
+}
+
+/*# sourceMappingURL=src_components_common_media_AnimatedIcon_module_css_bad6b30c._.single.css.map*/

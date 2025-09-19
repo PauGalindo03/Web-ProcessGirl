@@ -1,0 +1,89 @@
+.listaProductos {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.subtitulo {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--color-principal, #ef1e9f);
+}
+
+.listaProductos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.itemProducto {
+  border-bottom: 1px solid #eee;
+}
+
+.itemProducto:last-child {
+  border-bottom: none;
+}
+
+/* El enlace ocupa todo el li y mantiene el layout original */
+.productoLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  text-decoration: none;
+  color: inherit; /* mantiene el color del texto */
+}
+
+.productoLink:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.numero {
+  background: var(--color-principal, #ef1e9f);
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.infoProducto {
+  flex: 1;
+}
+
+.productoDesc {
+  font-size: 0.9rem;
+  color: var(--color-texto-semi-claro, #655f5f);
+}
+
+.productoImgRight {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.portalButton {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: var(--color-secundario, #6da7cc);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.portalButton:hover {
+  transform: scale(1.05);
+}

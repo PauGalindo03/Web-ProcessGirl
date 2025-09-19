@@ -1,0 +1,270 @@
+/* ==========================================================================
+  ESTRUCTURA CARRITO
+  ========================================================================== */
+
+/* Contenedor de productos */
+.contenedorProductosCarrito {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+
+  align-items: center;
+  align-content: center;
+
+  padding: 1px;
+  padding-top: 0px;
+  width: 100%;
+}
+
+/* ==========================================================================
+  PRODUCTO
+  ========================================================================== */
+.productoCont {
+  padding: 10px;
+}
+
+/* ... Contenedor del contenido de cada producto (título, precio) ... */
+.productoCont .info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.producto-carrito .info h4 {
+  font-size: 18px !important;
+}
+
+.producto-carrito .info h4,
+.producto-carrito .info p { /*probar cuando el carrito este poblado, pasarlo a .productoCont .info*/
+  text-align: left;
+  margin: 0;
+}
+
+.productoCont:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.productoCont:last-child {
+  padding-bottom: 15px;
+  border-bottom: 1.5px solid var(--color-menus);
+}
+
+
+/* ==========================================================================
+  NO DISPONIBLES
+  ========================================================================== */
+/* ... Producto/Paquete no disponible ... */
+.producto-carrito.no-disponible .info {
+  opacity: 0.6;
+}
+
+.razon-no-disponible {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.producto-carrito.no-disponible .titulo-enlace,
+.producto-carrito.no-disponible .btn-toggle-productos {
+  pointer-events: none;
+}
+
+/* ==========================================================================
+  OTROS
+  ========================================================================== */
+
+.productoCarrito {
+  position: relative;
+  width: 100%;
+  border-top: 1.5px solid var(--color-menus);
+  padding: 10px;
+}
+
+.producto-carrito a {
+  /* Link al html del producto correspondiente */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 15px;
+  width: 100%;
+
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+
+.producto-carrito.eliminando {
+  /* Animación al eliminar producto */
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+/* ========================================================================== 
+   ESTILOS PARA PAQUETES DENTRO DEL CARRITO (Header & Html)
+   ========================================================================== */
+
+/* ----------------------------------------------
+   Título con flecha para ver productos incluidos
+   ---------------------------------------------- */
+.titulo-con-flecha h4 {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.titulo-contenedor {
+  /* Contenedor que une el título h4 con la flecha */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.titulo-enlace {
+  /* Enlace al título (se debe hacer así para que no se ponga enlace a la flecha */
+  font-family: var(--fuente-txt-decorado);
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ... Botón (flecha) para desplegar productos ... */
+.btn-toggle-productos {
+  background: transparent;
+  border: none;
+  padding-top: 2px;
+  padding-left: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.btn-toggle-productos:active i {
+  transform: scale(0.9);
+}
+
+.btn-toggle-productos.open i {
+  transform: rotate(180deg);
+}
+
+/* ------------------------------
+   Productos incluidos en el paquete
+   ------------------------------ */
+
+/* ... Lista de los productos ... */
+.productos-incluidos-lista {
+  align-items: center;
+}
+
+.productos-incluidos-lista li {
+  margin-bottom: 2px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* ... Producto individual ... */
+.producto-incluido-item {
+  display: flex;
+  align-items: center;
+  height: 25px;
+}
+
+.producto-incluido-link {
+  /* Links de productos */
+  font-family: var(--fuente-texto);
+  color: var(--color-texto-semi-obscuro);
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.producto-incluido-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #a0c4ff, #cdb4db);
+  transition: left 0.4s ease;
+  z-index: -1;
+}
+
+.producto-incluido-link:hover::before {
+  left: 0;
+}
+
+.producto-incluido-link:hover {
+  color: #fefdfd;
+}
+
+.producto-incluido-link:active {
+  transform: scale(0.7);
+}
+
+.producto-incluido-link p {
+  /* Título del producto */
+  display: inline-flex;
+  gap: 8px;
+  margin: 0;
+  align-items: center;
+}
+
+/* ... Precio a la derecha del producto dentro del paquete ... */
+.precio-producto {
+  margin-right: 0;
+  text-align: right;
+  font-size: 12px !important;
+  color: var(--color-texto-obscuro);
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.precio-producto .precio-descuento {
+  color: var(--color-principal);
+  font-size: 12px !important;
+  margin-top: 2px;
+}
+
+.precio-producto .precio-original {
+  font-size: 10px;
+  margin-top: 2px;
+  color: var(--color-texto-semi-obscuro);
+}
+
+.precio-producto .precio-normal {
+  font-size: 12px !important;
+  margin-top: 2px;
+  color: var(--color-principal);
+}
+
+/* Scroll de items */
+.contenedorProductosCarrito::-webkit-scrollbar {
+  width: 9px;
+}
+
+.contenedorProductosCarrito::-webkit-scrollbar-track {
+  background: var(--color-rosa-clarito);
+  border-radius: 10px;
+}
+
+.contenedorProductosCarrito::-webkit-scrollbar-thumb {
+  background-color: var(--color-acento-obscuro);
+  border-radius: 20px;
+  border: 2px solid var(--color-rosa-clarito);
+}
+
+.contenedorProductosCarrito::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-acento-vino);
+}

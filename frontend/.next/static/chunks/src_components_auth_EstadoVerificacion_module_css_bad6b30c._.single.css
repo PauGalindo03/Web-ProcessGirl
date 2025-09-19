@@ -1,0 +1,57 @@
+/* [project]/src/components/auth/EstadoVerificacion.module.css [app-client] (css) */
+.EstadoVerificacion-module__GqsPoG__estado {
+  color: #5a004c;
+  text-align: center;
+  background-color: #fff0f7;
+  border: 2px solid #f9d5e5;
+  border-radius: 16px;
+  max-width: 500px;
+  margin: 24px auto;
+  padding: 24px;
+  font-family: Segoe UI, sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .05);
+}
+
+.EstadoVerificacion-module__GqsPoG__boton {
+  color: #fff;
+  cursor: pointer;
+  background-color: #ef1e9f;
+  border: none;
+  border-radius: 25px;
+  margin-top: 16px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color .3s;
+}
+
+.EstadoVerificacion-module__GqsPoG__boton:hover {
+  background-color: #d90c8b;
+}
+
+.EstadoVerificacion-module__GqsPoG__boton:disabled {
+  cursor: not-allowed;
+  background-color: #f3a9d1;
+}
+
+.EstadoVerificacion-module__GqsPoG__estado p {
+  margin: 12px 0;
+  font-size: 16px;
+}
+
+.EstadoVerificacion-module__GqsPoG__estado strong {
+  color: #ef1e9f;
+}
+
+.EstadoVerificacion-module__GqsPoG__estado p:first-child {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.EstadoVerificacion-module__GqsPoG__estado p:first-child:before {
+  content: "✅";
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=src_components_auth_EstadoVerificacion_module_css_bad6b30c._.single.css.map*/

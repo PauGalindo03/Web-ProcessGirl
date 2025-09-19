@@ -1,0 +1,37 @@
+/* [project]/src/components/catalogo/ui/FiltersBar.module.css [app-client] (css) */
+.FiltersBar-module__Oka2YW__bar {
+  align-items: center;
+  gap: var(--space-sm);
+  padding-bottom: var(--space-st);
+  scroll-snap-type: x mandatory;
+  display: flex;
+  overflow-x: auto;
+}
+
+.FiltersBar-module__Oka2YW__button {
+  font-family: var(--fuente-btn);
+  background-color: var(--color-sub-menus);
+  color: var(--color-texto-semi-obscuro);
+  cursor: pointer;
+  scroll-snap-align: start;
+  white-space: nowrap;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 3rem;
+  padding: .5rem 1rem;
+  font-size: .85rem;
+  transition: background .3s, transform .2s;
+}
+
+.FiltersBar-module__Oka2YW__button:hover {
+  background-color: var(--color-menus);
+  transform: scale(1.03);
+}
+
+.FiltersBar-module__Oka2YW__buttonActive {
+  background: var(--gradiente-pink-white);
+  color: var(--color-texto-claro);
+  box-shadow: var(--shadow-pink);
+  border: 1px solid var(--color-principal);
+}
+
+/*# sourceMappingURL=src_components_catalogo_ui_FiltersBar_module_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,120 @@
+/* [project]/src/pages/ContactoPage/ContactoPage.module.css [app-client] (css) */
+.ContactoPage-module__ehu8ba__contactSection {
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  padding: 2rem;
+  display: flex;
+}
+
+.ContactoPage-module__ehu8ba__title {
+  margin-bottom: 2rem;
+  font-size: 40px;
+}
+
+.ContactoPage-module__ehu8ba__cards {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  display: flex;
+}
+
+.ContactoPage-module__ehu8ba__card {
+  background: #fff;
+  border-radius: 12px;
+  flex-direction: column;
+  flex: 250px;
+  justify-content: space-between;
+  max-width: 300px;
+  padding: 1.5rem;
+  transition: transform .2s, box-shadow .2s;
+  display: flex;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .05);
+}
+
+.ContactoPage-module__ehu8ba__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, .08);
+}
+
+.ContactoPage-module__ehu8ba__card h2 {
+  color: var(--color-secundario);
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+}
+
+.ContactoPage-module__ehu8ba__card p {
+  color: var(--texto-semi-obscuro);
+  flex-grow: 1;
+  font-size: .95rem;
+}
+
+.ContactoPage-module__ehu8ba__cta {
+  background: var(--color-principal);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  margin-top: 1rem;
+  padding: .6rem 1rem;
+  font-weight: bold;
+  transition: background .2s;
+}
+
+.ContactoPage-module__ehu8ba__cta:hover {
+  background: var(--color-secundario);
+}
+
+.ContactoPage-module__ehu8ba__modalOverlay {
+  z-index: 1000;
+  background: rgba(0, 0, 0, .6);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.ContactoPage-module__ehu8ba__modalContent {
+  background: #fff;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 800px;
+  padding: 1rem;
+  position: relative;
+}
+
+.ContactoPage-module__ehu8ba__close {
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.ContactoPage-module__ehu8ba__iframe {
+  border: none;
+  width: 100%;
+  height: 450px;
+}
+
+.ContactoPage-module__ehu8ba__fallback {
+  text-align: center;
+}
+
+.ContactoPage-module__ehu8ba__fallback img {
+  width: 80%;
+  max-width: 800px;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 576px) {
+  .ContactoPage-module__ehu8ba__title {
+    font-size: 30px;
+  }
+}
+
+/*# sourceMappingURL=src_pages_ContactoPage_ContactoPage_module_d9dbdd9c.css.map*/

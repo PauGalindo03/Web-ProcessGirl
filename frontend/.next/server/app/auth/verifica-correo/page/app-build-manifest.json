@@ -1,0 +1,30 @@
+{
+  "pages": {
+    "/auth/verifica-correo/page": [
+      "static/chunks/_51a1e242._.css",
+      "static/chunks/src_ddf2fd5d._.js",
+      "static/chunks/c2b95_next_c8c8fa87._.js",
+      "static/chunks/1e126_axios_lib_81a2d6f9._.js",
+      "static/chunks/8dfe4_motion-dom_dist_es_b7a269f8._.js",
+      "static/chunks/0a0a1_framer-motion_dist_es_b37949f4._.js",
+      "static/chunks/node_modules__pnpm_ddfbe74c._.js",
+      "static/chunks/src_app_layout_tsx_586ce08f._.js",
+      "static/chunks/c2b95_next_dist_client_components_builtin_global-error_7086f225.js",
+      "static/chunks/src_app_auth_AuthLayout_module_fd2c2bd8.css",
+      "static/chunks/src_app_auth_0690f7e5._.js",
+      "static/chunks/src_app_auth_layout_tsx_7086f225._.js",
+      "static/chunks/src_app_auth_verifica-correo_VerificaCorreo_module_6213af37.css",
+      "static/chunks/src_app_auth_verifica-correo_dad4f6db._.js",
+      "static/chunks/src_app_auth_verifica-correo_page_tsx_2b29d73c._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_54b5d246._.js",
+      "static/chunks/c2b95_next_dist_compiled_react-dom_57177ea4._.js",
+      "static/chunks/c2b95_next_dist_compiled_next-devtools_index_5138023c.js",
+      "static/chunks/c2b95_next_dist_compiled_68ed5fbd._.js",
+      "static/chunks/c2b95_next_dist_client_974695e0._.js",
+      "static/chunks/c2b95_next_dist_a9b1234c._.js",
+      "static/chunks/69652_@swc_helpers_cjs_77b72907._.js",
+      "static/chunks/_a0ff3932._.js",
+      "static/chunks/turbopack-_189f6ed7._.js"
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+/* [project]/src/pages/PaquetePage/PaqueteValorBox.module.css [app-client] (css) */
+.PaqueteValorBox-module__ny_ZVa__valorBox {
+  background: var(--color-azul-claro, #fef4f7);
+  border-radius: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  display: flex;
+}
+
+.PaqueteValorBox-module__ny_ZVa__valorItem {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.PaqueteValorBox-module__ny_ZVa__label {
+  color: var(--color-texto-semi-obscuro, #2e2e2e);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.PaqueteValorBox-module__ny_ZVa__valor, .PaqueteValorBox-module__ny_ZVa__precioFinal, .PaqueteValorBox-module__ny_ZVa__ahorro {
+  font-size: 1.2rem;
+  font-family: var(--fuente-txt-decorado);
+  font-weight: 600;
+}
+
+.PaqueteValorBox-module__ny_ZVa__ahorro {
+  color: var(--color-principal, #ef1e9f);
+}
+
+.PaqueteValorBox-module__ny_ZVa__portalButton {
+  color: #fff;
+  background: var(--color-secundario, #6da7cc);
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  align-self: center;
+  padding: .8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: transform .2s;
+}
+
+.PaqueteValorBox-module__ny_ZVa__portalButton:hover {
+  transform: scale(1.05);
+}
+
+/*# sourceMappingURL=src_pages_PaquetePage_PaqueteValorBox_module_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/pauli/Desktop/Digital_Nest/Proyects/Process_Girl/process_girl_web/frontend/src/app/page.module.css"],"sourcesContent":["/* styles/main.module.css */\n.main {\n  display: flex;\n  flex-direction: column;\n  gap: 3rem;\n  margin-bottom: 3rem;\n}\n"],"names":[],"mappings":"AACA","debugId":null}}]
+}

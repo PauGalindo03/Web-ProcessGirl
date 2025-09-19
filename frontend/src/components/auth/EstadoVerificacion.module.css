@@ -1,0 +1,58 @@
+/* Contenedor general del estado */
+.estado {
+  background-color: #fff0f7;
+  border: 2px solid #f9d5e5;
+  border-radius: 16px;
+  padding: 24px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #5a004c;
+  max-width: 500px;
+  margin: 24px auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Botón principal */
+.boton {
+  background-color: #ef1e9f;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #d90c8b;
+}
+
+.boton:disabled {
+  background-color: #f3a9d1;
+  cursor: not-allowed;
+}
+
+/* Íconos y mensajes */
+.estado p {
+  font-size: 16px;
+  margin: 12px 0;
+}
+
+.estado strong {
+  color: #ef1e9f;
+}
+
+/* Mensajes según estado */
+.estado p:first-child {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.estado p:first-child::before {
+  content: '✅';
+  font-size: 24px;
+  margin-right: 8px;
+}

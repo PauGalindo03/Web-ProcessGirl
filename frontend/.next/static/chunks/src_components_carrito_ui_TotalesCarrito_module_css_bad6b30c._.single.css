@@ -1,0 +1,37 @@
+/* [project]/src/components/carrito/ui/TotalesCarrito.module.css [app-client] (css) */
+.TotalesCarrito-module__UAbjvq__resumenTotales {
+  font-family: var(--fuente-txt-decorado);
+  color: var(--texto);
+  flex-direction: column;
+  align-self: stretch;
+  gap: .3rem;
+  padding: .5rem;
+  font-size: 14px;
+  line-height: 1.2;
+  display: flex;
+}
+
+.TotalesCarrito-module__UAbjvq__resumenTotales p {
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.TotalesCarrito-module__UAbjvq__resumenTotales p span {
+  font-family: var(--fuente-texto);
+  color: var(--color-texto-obscuro);
+  font-weight: 500;
+}
+
+.TotalesCarrito-module__UAbjvq__resumenTotales .TotalesCarrito-module__UAbjvq__final {
+  color: var(--color-principal);
+  margin-top: .3rem;
+  margin-bottom: 2px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=src_components_carrito_ui_TotalesCarrito_module_css_bad6b30c._.single.css.map*/

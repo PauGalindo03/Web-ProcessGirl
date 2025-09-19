@@ -1,0 +1,51 @@
+/* [project]/src/components/home/CtaBlocks.module.css [app-client] (css) */
+.CtaBlocks-module__KHazDa__ctaBlock {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 2rem;
+  display: flex;
+}
+
+.CtaBlocks-module__KHazDa__ctaBlock h2 {
+  font-family: var(--fuente-txt-decorado);
+  color: var(--color-texto-obscuro);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.CtaBlocks-module__KHazDa__ctaBlock .CtaBlocks-module__KHazDa__texto-1 {
+  max-width: 650px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.CtaBlocks-module__KHazDa__ctaBlock .CtaBlocks-module__KHazDa__parrafo p {
+  margin-bottom: 1em;
+}
+
+.CtaBlocks-module__KHazDa__ctaBlock .CtaBlocks-module__KHazDa__parrafo p:last-child {
+  margin-bottom: 0;
+}
+
+.CtaBlocks-module__KHazDa__ctaRosa {
+  background-color: var(--color-rosa-clarito);
+}
+
+.CtaBlocks-module__KHazDa__ctaAzul {
+  background-color: var(--color-azul-claro);
+}
+
+@media (max-width: 960px) {
+  .CtaBlocks-module__KHazDa__ctaBlock h2 {
+    font-size: 25px;
+  }
+
+  .CtaBlocks-module__KHazDa__ctaBlock .CtaBlocks-module__KHazDa__parrafo p {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=src_components_home_CtaBlocks_module_css_bad6b30c._.single.css.map*/

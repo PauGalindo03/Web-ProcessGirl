@@ -1,0 +1,83 @@
+.menuContainer {
+  background-color: var(--color-menus);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+  position: relative;
+  box-shadow: var(--shadow-blue);
+  height: 80px;
+  z-index: 1000;
+}
+
+/* Logo */
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logoContainer img {
+  max-height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logoContainer a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Menú hamburguesa */
+.abrirMenu {
+  display: none;
+}
+
+/* Header actions: currency, login, cart */
+.accionesHeader {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .abrirMenu {
+    display: block;
+    font-size: 30px;
+    color: var(--color-principal);
+    cursor: pointer;
+  }
+
+  .waveOnHover span {
+    display: inline-block;
+  }
+
+  .waveOnHover:hover span {
+    animation: wave 0.6s ease-in-out infinite;
+  }
+
+  .waveOnHover:hover span:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .waveOnHover:hover span:nth-child(2) {
+    animation-delay: 0.15s;
+  }
+
+  .waveOnHover:hover span:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  @keyframes wave {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+}

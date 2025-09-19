@@ -1,0 +1,65 @@
+.wrapper {
+  position: relative;
+  display: inline-block;
+  font-family: var(--fuente-txt-decorado);
+  font-weight: 600;
+  min-width: 55px;
+}
+
+.selector {
+  background-color: var(--color-menus);
+  color: var(--color-texto-semi-obscuro);
+  border: 1px solid var(--color-principal);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1em;
+  cursor: pointer;
+  min-width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.selector:hover {
+  border-color: var(--color-principal-acento);
+  box-shadow: 0 0 4px var(--color-principal-acento);
+}
+
+.selector:focus {
+  outline: none;
+  border-color: var(--color-principal);
+  box-shadow: 0 0 6px var(--color-principal);
+}
+
+.options {
+  display: none; /* siempre renderizado pero oculto */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid var(--color-principal);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.show {
+  display: block; /* se muestra al hacer click */
+}
+
+.options li {
+  padding: 6px;
+  font-size: 0.75em;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.options li:hover {
+  background-color: var(--color-sub-menus);
+  color: var(--color-texto-semi-obscuro);
+}

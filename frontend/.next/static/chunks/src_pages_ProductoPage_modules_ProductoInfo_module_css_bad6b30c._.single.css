@@ -1,0 +1,44 @@
+/* [project]/src/pages/ProductoPage/modules/ProductoInfo.module.css [app-client] (css) */
+.ProductoInfo-module__YhCCfG__infoBox {
+  flex: 500px;
+  padding: 1rem 0;
+}
+
+.ProductoInfo-module__YhCCfG__titulo {
+  margin-bottom: .5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.ProductoInfo-module__YhCCfG__precioBox {
+  align-items: baseline;
+  gap: .5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  display: flex;
+}
+
+.ProductoInfo-module__YhCCfG__precioFinal {
+  color: var(--color-principal, #ef1e9f);
+  font-weight: bold;
+}
+
+.ProductoInfo-module__YhCCfG__precioBase {
+  color: #888;
+  font-size: 1rem;
+  text-decoration: line-through;
+}
+
+.ProductoInfo-module__YhCCfG__descripcion {
+  color: var(--color-texto-semi-obscuro, #2e2e2e);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.ProductoInfo-module__YhCCfG__descripcionLarga {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/*# sourceMappingURL=src_pages_ProductoPage_modules_ProductoInfo_module_css_bad6b30c._.single.css.map*/

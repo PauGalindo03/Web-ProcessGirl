@@ -1,0 +1,33 @@
+.detalles {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.titulo {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--color-principal, #ef1e9f);
+}
+
+.lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.lista li:last-child {
+  border-bottom: none;
+}
+
+.link {
+  color: var(--color-secundario, #6da7cc);
+  text-decoration: underline;
+  margin-right: 0.5rem;
+}

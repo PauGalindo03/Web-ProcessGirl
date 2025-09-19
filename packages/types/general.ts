@@ -1,0 +1,1 @@
+export type Estado = "Activo" | "En Producción" | "Pendiente";

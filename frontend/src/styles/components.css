@@ -1,0 +1,196 @@
+/* ==========================================================================
+   COMPONENTES GENERALES
+   - Botones, tarjetas, íconos, layout-body
+   ========================================================================== */
+
+/* ...- Iconos ...- */
+.icono-rosa {
+    color: var(--color-principal);
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.icono-azul {
+    color: var(--color-secundario);
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.eliminar {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--color-rojo-claro);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.eliminar:hover {
+    transform: scale(1.2);
+    color: var(--color-rojo-fuerte);
+}
+
+.cerrar {
+  font-weight: 700; /* más gruesa */
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: clamp(6rem, 5vw, 3rem);
+  color: var(--color-texto-claro);
+  cursor: pointer;
+  z-index: 1002;
+  transition: color 0.2s ease;
+  line-height: 1; /* evita que se desplace verticalmente */
+}
+
+.cerrar:hover,
+.cerrar:focus {
+  color: var(--color-principal);
+}
+
+/* ...- Botones ...- */
+.btn-cta {
+    font-family: var(--fuente-btn);
+    background: var(--gradiente-blue-white);
+    color: var(--color-texto-claro);
+    border: none;
+
+    line-height: 6px;
+    text-transform: lowercase;
+    text-align: center;
+
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+
+    min-width: 120px;
+    width: 100%;
+    min-height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.btn-cta:hover {
+    background: var(--gradiente-pink-white);
+}
+
+.btn-cta2 {
+    /* Botón comprar o agregar al carrito */
+    font-family: var(--fuente-txt-decorado);
+    background: var(--gradiente-pink-white);
+    color: var(--color-texto-claro);
+    border: none;
+    font-size: 15px;
+    text-transform: lowercase;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+
+    min-width: 150px;
+}
+
+.btn-cta2:hover {
+    background: var(--gradiente-blue-white);
+}
+
+.btn-cta3 {
+    /* Botón semi-circular (carrito) */
+    background: var(--gradiente-blue-white);
+    box-shadow: var(--shadow-pink);
+    font-size: 14px;
+    font-weight: 600;
+    /* un poco más fuerte para que resalte */
+
+    border: none;
+    border-radius: 2rem;
+
+    padding: 0.2rem 1.5rem;
+    max-height: 30px;
+    height: 30px;
+    min-width: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    color: #1a3a57;
+    /* azul oscuro */
+    /* alternativa suave: color: #2c4a63; */
+}
+
+.btn-cta3:hover {
+    background: var(--gradiente-pink-white);
+    color: var(--color-texto-claro);
+    box-shadow: var(--shadow-blue);
+}
+
+
+.btn-cta4 {
+    /* Botón semi-circular (carrito) */
+    font-family: var(--fuente-btn);
+    background: var(--gradiente-pink-white);
+    color: var(--color-texto-claro);
+    box-shadow: var(--shadow-blue);
+    font-size: 15px;
+    text-transform: lowercase;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 2rem;
+
+    padding: 0.2rem 1.5rem;
+    max-height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-cta4:hover {
+    background: var(--gradiente-blue-white);
+    color: var(--color-texto-semi-obscuro);
+    box-shadow: var(--shadow-pink);
+}
+
+@media (max-width: 960px) {
+
+    .icono-rosa,
+    .icono-azul {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .icono-rosa,
+    .icono-azul {
+        font-size: 2rem;
+    }
+}

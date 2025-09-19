@@ -1,0 +1,109 @@
+/* [project]/src/pages/SobreMiPage/CEO.module.css [app-client] (css) */
+.CEO-module__-XS4Ta__seccionCeo {
+  font-family: var(--fuente-texto);
+  background-color: var(--color-rosa-clarito);
+  color: var(--color-acento-vino);
+  min-height: 100px;
+  padding: 10px 20px;
+}
+
+.CEO-module__-XS4Ta__contenedorCeo {
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 40px;
+  max-width: 1000px;
+  min-height: 300px;
+  margin: auto;
+  display: flex;
+}
+
+.CEO-module__-XS4Ta__fotoCeo {
+  aspect-ratio: 1;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 228px;
+  max-width: 300px;
+  margin: 0 auto;
+  transition: transform .3s;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.CEO-module__-XS4Ta__fotoCeo:hover {
+  transform: scale(1.05);
+}
+
+.CEO-module__-XS4Ta__fotoCeo img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  border: 4px solid var(--color-principal);
+  width: 220px;
+  height: 220px;
+  box-shadow: var(--shadow-blue);
+  border-radius: 50%;
+  transition: transform .3s, box-shadow .3s;
+  display: block;
+}
+
+.CEO-module__-XS4Ta__fotoCeo img:hover {
+  border: 4px solid var(--color-secundario);
+  box-shadow: var(--shadow-pink);
+  transform: scale(1.05);
+}
+
+.CEO-module__-XS4Ta__textoCeo {
+  flex: 1;
+  min-width: 100px;
+  min-height: 90px;
+}
+
+.CEO-module__-XS4Ta__tituloLocal, .CEO-module__-XS4Ta__desc, .CEO-module__-XS4Ta__textoLocal {
+  text-align: left;
+}
+
+.CEO-module__-XS4Ta__textoCeo h2 {
+  font-size: 35px;
+}
+
+.CEO-module__-XS4Ta__desc {
+  text-transform: capitalize;
+  color: var(--color-principal);
+  -webkit-text-fill-color: unset;
+  background: none;
+  font-size: 25px;
+}
+
+.CEO-module__-XS4Ta__textoPrincipal {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .CEO-module__-XS4Ta__contenedorCeo {
+    text-align: center;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .CEO-module__-XS4Ta__tituloLocal, .CEO-module__-XS4Ta__desc, .CEO-module__-XS4Ta__textoLocal {
+    text-align: center;
+  }
+
+  .CEO-module__-XS4Ta__fotoCeo img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .CEO-module__-XS4Ta__textoPrincipal {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=src_pages_SobreMiPage_CEO_module_css_bad6b30c._.single.css.map*/

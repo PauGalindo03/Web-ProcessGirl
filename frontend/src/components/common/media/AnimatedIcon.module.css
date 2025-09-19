@@ -1,0 +1,106 @@
+/* 🎨 Animación de color rosa al activar */
+.rosa {
+  color: var(--color-principal);
+  transition: color 0.2s ease;
+}
+
+.rebote {
+  will-change: transform;
+  animation: rebote 0.3s ease;
+}
+
+@keyframes rebote {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4); }
+  100% { transform: scale(1); }
+}
+
+/* Rotación suave */
+.rotateOnHover {
+  transition: transform 0.3s ease;
+}
+.rotateOnHover:hover {
+  transform: rotate(90deg);
+}
+
+/* Rebote sutil */
+.bounceOnHover {
+  transition: transform 0.3s ease;
+}
+.bounceOnHover:hover {
+  transform: translateY(-4px);
+}
+
+/* Giro completo */
+.spinOnHover {
+  transition: transform 0.5s ease;
+}
+.spinOnHover:hover {
+  transform: rotate(360deg);
+}
+
+/* Pulso (latido) */
+.pulseOnHover {
+  transition: transform 0.3s ease;
+}
+.pulseOnHover:hover {
+  transform: scale(1.1);
+}
+
+/* Vibración lateral */
+.shakeOnHover {
+  animation: shake 0.4s ease;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+  75% { transform: translateX(-2px); }
+  100% { transform: translateX(0); }
+}
+.shakeOnHover:hover {
+  animation: shake 0.4s ease;
+}
+
+/* Brillo */
+.glowOnHover {
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+.glowOnHover:hover {
+  color: var(--color-principal, #0d6efd); /* ajusta tu variable */
+  text-shadow: 0 0 8px currentColor;
+}
+
+/* Subida con sombra */
+.liftOnHover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.liftOnHover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Sacudida vertical */
+.wiggleOnHover {
+  animation: wiggle 0.4s ease;
+}
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  50% { transform: rotate(10deg); }
+  75% { transform: rotate(-6deg); }
+  100% { transform: rotate(0deg); }
+}
+.wiggleOnHover:hover {
+  animation: wiggle 0.4s ease;
+}
+
+/* Zoom + giro leve */
+.zoomRotateOnHover {
+  transition: transform 0.4s ease;
+}
+.zoomRotateOnHover:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+

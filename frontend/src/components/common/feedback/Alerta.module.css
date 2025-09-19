@@ -1,0 +1,143 @@
+/* src/components/common/Alerta.module.css */
+
+.alerta {
+  position: fixed;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-20px);
+  opacity: 0;
+  z-index: 10005;
+
+  width: 35%;
+  min-width: 250px;
+  padding: 25px 35px;
+  border: 1px solid;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: var(--fuente-base, 'Segoe UI', sans-serif);
+  line-height: 1.4;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.cerrar {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  right: 12px;
+}
+
+/* Tipos de alerta */
+.success {
+  background-color: var(--color-principal-acento);
+  color: var(--color-texto-claro);
+  border-color: var(--color-principal);
+}
+
+.error {
+  background-color: #fdecea;
+  color: #d32f2f;
+  border-color: #d32f2f;
+}
+
+.info {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  border-color: #1976d2;
+}
+
+.confirmacion {
+  background-color: var(--color-azul-claro);
+  border-color: var(--color-secundario-fuerte);
+  padding: 15px 20px;
+  text-align: left;
+  min-width: 390px;
+  width: 45%;
+}
+
+.botones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.botones button {
+  font-family: var(--fuente-btn);
+  font-size: 17px;
+  padding: 4px;
+  width: 20%;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.ok {
+  color: var(--color-texto-claro);
+  background-color: var(--color-secundario);
+  border-color: var(--color-secundario-fuerte);
+}
+
+.ok:hover {
+  background-color: var(--color-secundario-fuerte);
+}
+
+.cancel {
+  background-color: transparent;
+  color: var(--color-texto-obscuro);
+  border-color: var(--color-gris-claro);
+}
+
+.cancel:hover {
+  background-color: #ddd;
+}
+
+.confirmacion .cerrar {
+  display: none;
+}
+
+.mensaje .hostName {
+  font-weight: bolder;
+  font-size: 0.9rem;
+  color: var(--color-texto-obscuro);
+  margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  .alerta {
+    width: 90%;
+    padding: 20px;
+    font-size: 13px;
+    border-radius: 6px;
+  }
+
+  .confirmacion {
+    width: 95%;
+    min-width: unset;
+    padding: 18px;
+  }
+
+  .botones button {
+    width: auto;
+    font-size: 15px;
+    padding: 6px 12px;
+  }
+
+  .cerrar {
+    font-size: 24px;
+    top: 4px;
+    right: 10px;
+  }
+}

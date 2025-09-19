@@ -1,0 +1,34 @@
+.bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  overflow-x: auto;
+  padding-bottom: var(--space-st);
+  scroll-snap-type: x mandatory;
+}
+
+.button {
+  font-family: var(--fuente-btn);
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  background-color: var(--color-sub-menus);
+  color: var(--color-texto-semi-obscuro);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  scroll-snap-align: start;
+  white-space: nowrap;
+}
+
+.button:hover {
+  background-color: var(--color-menus);
+  transform: scale(1.03);
+}
+
+.buttonActive {
+  background: var(--gradiente-pink-white);
+  color: var(--color-texto-claro);
+  box-shadow: var(--shadow-pink);
+  border: 1px solid var(--color-principal);
+}

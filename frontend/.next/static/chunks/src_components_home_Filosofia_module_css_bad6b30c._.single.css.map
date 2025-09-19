@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/home/Filosofia.module.css"],"sourcesContent":[".filosofiaSection {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    gap: 1.5rem;\r\n    padding: 0 2rem;\r\n    text-align: center;\r\n}\r\n\r\n.titulo {\r\n    max-width: 900px;\r\n    font-size: 40px;\r\n    margin: 0 auto;\r\n}\r\n\r\n.subtituloFilosofia {\r\n    font-family: var(--fuente-txt-decorado);\r\n    color: var(--color-principal);\r\n    font-size: 1.2rem;\r\n    max-width: 700px;\r\n    margin: 0 auto;\r\n}\r\n\r\n.textoFilosofia {\r\n    max-width: 700px;\r\n    line-height: 1.7;\r\n    margin: 0 auto;\r\n    font-size: 0.9rem;\r\n}\r\n\r\n@media (max-width: 960px) {\r\n    .titulo {\r\n        font-size: 30px;\r\n    }\r\n\r\n    .subtituloFilosofia {\r\n        font-size: 1rem;\r\n    }\r\n}"],"names":[],"mappings":"AAAA;;;;;;;;;AASA;;;;;;AAMA;;;;;;;;AAQA;;;;;;;AAOA;EACI;;;;EAIA"}}]
+}

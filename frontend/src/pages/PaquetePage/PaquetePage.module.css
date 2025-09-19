@@ -1,0 +1,334 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+}
+
+.titulo {
+  font-family: var(--fuente-texto);
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.descripcion {
+  font-size: 1.1rem;
+  color: var(--color-texto-semi-obscuro, #2e2e2e);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.valorBox {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background: var(--color-azul-claro, #fef4f7);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.valorItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--color-texto-semi-obscuro, #2e2e2e);
+}
+
+.valor,
+.precioFinal,
+.ahorro {
+  font-size: 1.2rem;
+  font-family: var(--fuente-txt-decorado);
+  font-weight: 600;
+}
+
+.ahorro {
+  color: var(--color-principal, #ef1e9f);
+}
+
+/* 📱 Vista móvil: lista numerada */
+.listaProductos {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.subtitulo {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--color-principal, #ef1e9f);
+}
+
+.listaProductos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.itemProducto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.itemProducto:last-child {
+  border-bottom: none;
+}
+
+.numero {
+  background: var(--color-principal, #ef1e9f);
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.infoProducto {
+  flex: 1;
+}
+
+.productoDesc {
+  font-size: 0.9rem;
+  color: var(--color-texto-semi-claro, #655f5f);
+}
+
+.productoImgRight {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+/* 💻 Vista escritorio: grid de tarjetas con hover */
+.gridProductos {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente si hay altura definida */
+  gap: 1rem;
+  flex-wrap: nowrap;       /* evita que salten a otra fila */
+}
+
+.cardProducto {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cardImg {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.cardProducto:hover .cardImg {
+  transform: scale(1.05);
+}
+
+.cardOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  opacity: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.cardProducto:hover .cardOverlay {
+  opacity: 1;
+}
+
+.cardOverlay h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.cardOverlay p {
+  margin: 0.2rem 0;
+}
+
+.cardDesc {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  opacity: 0.9;
+}
+
+/* CTA */
+.portalButton {
+  align-self: center;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: var(--color-secundario, #6da7cc);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.portalButton:hover {
+  transform: scale(1.05);
+}
+
+/* ====== ≤ 960px ====== */
+@media (max-width: 960px) {
+  .titulo {
+    font-size: 2.5rem;
+  }
+
+  .descripcion {
+    font-size: 1rem;
+    max-width: 500px;
+  }
+
+  .cardImg {
+    height: 260px;
+  }
+}
+
+/* ====== ≤ 768px ====== */
+@media (max-width: 768px) {
+  .page {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .titulo {
+    font-size: 2.2rem;
+  }
+
+  .descripcion {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .valorBox {
+    gap: 1rem;
+    padding: 0.8rem;
+  }
+
+  .valorItem {
+    min-width: 120px;
+  }
+
+  .gridProductos {
+    gap: 0.8rem;
+  }
+
+  .cardImg {
+    height: 220px;
+  }
+}
+
+/* ====== ≤ 576px ====== */
+@media (max-width: 576px) {
+  .titulo {
+    font-size: 1.8rem;
+  }
+
+  .descripcion {
+    font-size: 0.95rem;
+  }
+
+  .valor,
+  .precioFinal,
+  .ahorro {
+    font-size: 1.05rem;
+  }
+
+  .label {
+    font-size: 1rem;
+  }
+
+  .listaProductos {
+    padding: 1rem;
+  }
+
+  .numero {
+    width: 24px;
+    height: 24px;
+    font-size: 0.85rem;
+  }
+
+  .productoImgRight {
+    width: 45px;
+    height: 45px;
+  }
+
+  .cardImg {
+    height: 200px;
+  }
+}
+
+/* ====== ≤ 480px ====== */
+@media (max-width: 480px) {
+  .page {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .titulo {
+    font-size: 1.6rem;
+  }
+
+  .descripcion {
+    font-size: 0.9rem;
+  }
+
+  .valorBox {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .valorItem {
+    align-items: center;
+  }
+
+  .portalButton {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .cardImg {
+    height: 180px;
+  }
+
+  .cardOverlay h3 {
+    font-size: 1rem;
+  }
+
+  .cardOverlay p {
+    font-size: 0.85rem;
+  }
+}

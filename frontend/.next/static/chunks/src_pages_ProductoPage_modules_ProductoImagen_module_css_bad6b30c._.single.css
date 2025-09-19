@@ -1,0 +1,89 @@
+/* [project]/src/pages/ProductoPage/modules/ProductoImagen.module.css [app-client] (css) */
+.ProductoImagen-module__8I5Mcq__imagenBox {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  max-width: 100%;
+  display: flex;
+}
+
+.ProductoImagen-module__8I5Mcq__imagenWrapper {
+  border-radius: 8px;
+  width: 100%;
+  max-width: 550px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ProductoImagen-module__8I5Mcq__imagen {
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ProductoImagen-module__8I5Mcq__badge {
+  background: var(--color-principal, #ef1e9f);
+  color: #fff;
+  border-radius: 4px;
+  padding: .4rem .8rem;
+  font-size: .85rem;
+  font-weight: bold;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.ProductoImagen-module__8I5Mcq__stock {
+  color: #333;
+  background: rgba(255, 255, 255, .9);
+  border-radius: 4px;
+  padding: .3rem .6rem;
+  font-size: .9rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.ProductoImagen-module__8I5Mcq__verMas {
+  background: var(--color-secundario, #6da7cc);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: .5rem 1rem;
+  font-size: .9rem;
+  font-weight: bold;
+  transition: transform .2s;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.ProductoImagen-module__8I5Mcq__verMas:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+  .ProductoImagen-module__8I5Mcq__imagenBox {
+    text-align: center;
+    align-items: center;
+  }
+
+  .ProductoImagen-module__8I5Mcq__imagenWrapper {
+    max-width: 100%;
+  }
+
+  .ProductoImagen-module__8I5Mcq__badge, .ProductoImagen-module__8I5Mcq__stock, .ProductoImagen-module__8I5Mcq__verMas {
+    font-size: .8rem;
+  }
+
+  .ProductoImagen-module__8I5Mcq__verMas {
+    padding: .4rem .8rem;
+  }
+}
+
+/*# sourceMappingURL=src_pages_ProductoPage_modules_ProductoImagen_module_css_bad6b30c._.single.css.map*/

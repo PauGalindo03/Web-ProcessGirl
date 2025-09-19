@@ -1,0 +1,88 @@
+/* [project]/src/app/sistemas/page.module.css [app-client] (css) */
+.page-module__ToYRrq__page {
+  max-width: 1200px;
+  padding: var(--space-md);
+  margin: 0 auto;
+}
+
+.page-module__ToYRrq__headingDebug {
+  color: var(--color-rojo-claro);
+  background-color: var(--color-amarillo);
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: var(--fuente-texto);
+  border-radius: .5rem;
+}
+
+.page-module__ToYRrq__filters {
+  margin-bottom: var(--space-md);
+}
+
+.page-module__ToYRrq__featured {
+  margin-bottom: var(--space-md);
+  padding: var(--space-lg);
+  background: var(--line-blue);
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-md);
+  box-shadow: var(--shadow-blue);
+  border-radius: 1rem;
+  display: flex;
+}
+
+.page-module__ToYRrq__featuredText h2 {
+  font-family: var(--fuente-txt-decorado);
+  color: var(--color-principal);
+  margin-bottom: var(--space-xs);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.page-module__ToYRrq__featuredText p {
+  color: var(--color-texto-semi-claro);
+  font-size: .85rem;
+  font-family: var(--fuente-texto);
+}
+
+.page-module__ToYRrq__featuredButton {
+  font-family: var(--fuente-btn);
+  background: var(--gradiente-pink-white);
+  color: var(--color-texto-claro);
+  box-shadow: var(--shadow-pink);
+  cursor: pointer;
+  border-radius: 1rem;
+  padding: .5rem 1rem;
+  font-weight: 600;
+  transition: background .3s, transform .2s;
+}
+
+.page-module__ToYRrq__featuredButton:hover {
+  background: var(--gradiente-blue-white);
+  transform: scale(1.02);
+}
+
+.page-module__ToYRrq__loading, .page-module__ToYRrq__error {
+  text-align: center;
+  padding: var(--space-lg);
+  font-family: var(--fuente-texto);
+}
+
+.page-module__ToYRrq__error {
+  color: var(--color-rojo-fuerte);
+}
+
+@media (max-width: 768px) {
+  .page-module__ToYRrq__featured {
+    background: var(--rad-blue);
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-module__ToYRrq__featuredText {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=src_app_sistemas_page_module_b5409c09.css.map*/
