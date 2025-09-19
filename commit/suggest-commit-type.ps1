@@ -12,7 +12,7 @@ foreach ($file in $changedFiles) {
         "\.(test|spec)\.(ts|js|tsx)$"                          { $null = $types += "test"; continue }
         default { } # evita salidas inesperadas
     }
-    Write-Host "Archivo: $file"
+    #Write-Host "Archivo: $file"
 }
 
 $types = $types | Sort-Object -Unique

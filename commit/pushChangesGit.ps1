@@ -11,7 +11,8 @@ git add .
 
 # Paso 3: Sugerir tipo de commit
 Write-Host "`nDetectando tipo de commit sugerido..."
-$commitTypeRaw = & .\commit\suggest-commit-type.ps1
+$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+$commitTypeRaw = & "$scriptDir\suggest-commit-type.ps1"
 
 if ($commitTypeRaw -eq "none") {
     $commitType = Read-Host "`nNo se detectó tipo. Escribe manualmente el tipo de commit (ej: feat, fix, chore)"
@@ -26,7 +27,7 @@ if ($commitTypeRaw -eq "none") {
 }
 
 # Paso 4: Escribir mensaje
-$commitMessage = Read-Host "`nEscribe el mensaje del commit (sin tipo)"
+$commitMessage = Read-Host "`nEscribe el mensaje del commit (solo el mensaje, no el tipo)"
 $fullMessage = "${commitType}: ${commitMessage}"
 
 # Confirmar commit

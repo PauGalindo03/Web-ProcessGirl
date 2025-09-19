@@ -12,7 +12,8 @@
     "update:check": "pnpm outdated",
     "update:lint": "pnpm up eslint prettier typescript typescript-eslint @next/eslint-plugin-next eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-config-prettier --latest",
     "update:core": "pnpm up next react react-dom swr axios framer-motion --latest",
-    "update:all": "pnpm up --latest"
+    "update:all": "pnpm up --latest",
+    "commit": "powershell -ExecutionPolicy Bypass -File ../commit/pushChangesGit.ps1"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
