@@ -1,9 +1,5 @@
 {
-  "app": {
-    "[project]/src/app/_not-found/page": [],
-    "[project]/src/app/auth/register/page": [],
-    "[project]/src/app/auth/verificacion/correo/page": []
-  },
+  "app": {},
   "appUsingSizeAdjust": false,
   "pages": {},
   "pagesUsingSizeAdjust": false

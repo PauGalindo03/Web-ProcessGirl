@@ -1,26 +1,26 @@
 {
   "pages": {
     "/page": [
-      "static/chunks/_76f3ae62._.css",
-      "static/chunks/src_470244db._.js",
-      "static/chunks/c2b95_next_2055354a._.js",
-      "static/chunks/1e126_axios_lib_81a2d6f9._.js",
-      "static/chunks/8dfe4_motion-dom_dist_es_b7a269f8._.js",
-      "static/chunks/0a0a1_framer-motion_dist_es_b37949f4._.js",
-      "static/chunks/node_modules__pnpm_ddfbe74c._.js",
-      "static/chunks/src_app_layout_tsx_586ce08f._.js",
-      "static/chunks/c2b95_next_dist_client_components_builtin_global-error_3ac2fa12.js",
-      "static/chunks/src_app_page_module_2aa510fc.css",
-      "static/chunks/src_app_page_tsx_3ac2fa12._.js",
-      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_54b5d246._.js",
-      "static/chunks/c2b95_next_dist_compiled_react-dom_57177ea4._.js",
-      "static/chunks/c2b95_next_dist_compiled_next-devtools_index_5138023c.js",
-      "static/chunks/c2b95_next_dist_compiled_68ed5fbd._.js",
-      "static/chunks/c2b95_next_dist_client_974695e0._.js",
-      "static/chunks/c2b95_next_dist_a9b1234c._.js",
-      "static/chunks/69652_@swc_helpers_cjs_77b72907._.js",
-      "static/chunks/_a0ff3932._.js",
-      "static/chunks/turbopack-_189f6ed7._.js"
+      "static/chunks/frontend_c97c3cb6._.css",
+      "static/chunks/frontend_src_e0926219._.js",
+      "static/chunks/d60dc_next_6e31a791._.js",
+      "static/chunks/ae4fa_axios_lib_37640fa7._.js",
+      "static/chunks/9cd6d_motion-dom_dist_es_6d6221b1._.js",
+      "static/chunks/9136a_framer-motion_dist_es_d3dd7fd5._.js",
+      "static/chunks/9e883__pnpm_5312d0f0._.js",
+      "static/chunks/frontend_src_app_layout_tsx_371774b3._.js",
+      "static/chunks/d60dc_next_dist_client_components_builtin_global-error_240a6a5b.js",
+      "static/chunks/frontend_src_app_page_module_b53fe93b.css",
+      "static/chunks/frontend_src_app_page_tsx_240a6a5b._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_9d8d364f._.js",
+      "static/chunks/d60dc_next_dist_compiled_react-dom_8a0442fd._.js",
+      "static/chunks/d60dc_next_dist_compiled_next-devtools_index_ce700a8a.js",
+      "static/chunks/d60dc_next_dist_compiled_395a5e89._.js",
+      "static/chunks/d60dc_next_dist_client_fe759c54._.js",
+      "static/chunks/d60dc_next_dist_c53dfa03._.js",
+      "static/chunks/f1f29_@swc_helpers_cjs_dbb688c7._.js",
+      "static/chunks/frontend_a0ff3932._.js",
+      "static/chunks/turbopack-frontend_de9e1c90._.js"
     ]
   }
 }

@@ -1,7 +1,7 @@
 {
   "pages": {},
   "app": {
-    "[project]/src/app/auth/register/page": []
+    "[project]/frontend/src/app/auth/register/page": []
   },
   "appUsingSizeAdjust": false,
   "pagesUsingSizeAdjust": false

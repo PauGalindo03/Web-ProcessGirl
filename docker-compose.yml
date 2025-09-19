@@ -47,6 +47,8 @@ services:
       NODE_ENV: development
     depends_on:
       - mongo
+    env_file:
+      - ./backend/.env
     volumes:
       - ./backend:/app
       - /app/node_modules
