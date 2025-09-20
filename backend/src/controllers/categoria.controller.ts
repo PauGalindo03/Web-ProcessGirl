@@ -1,5 +1,6 @@
 import type { Request, Response } from "express";
-import { CategoriaService } from "../services/categoriaService.js";
+import { CategoriaService } from "@services/categoriaService.js";
+import { handleError } from "@utils/handleError";
 
 const categoriaService = new CategoriaService();
 
@@ -9,7 +10,7 @@ export const getPublicAll = async (_req: Request, res: Response) => {
     const categorias = await categoriaService.getAllPublic();
     res.json(categorias);
   } catch (error: any) {
-    res.status(500).json({ error: "Error al obtener categorías", message: error.message });
+    handleError(res, error.message, 500, "Error al obtener categorías")
   }
 };
 
@@ -19,7 +20,7 @@ export const getAll = async (_req: Request, res: Response) => {
     const categorias = await categoriaService.getAllAdmin();
     res.json(categorias);
   } catch (error: any) {
-    res.status(500).json({ error: "Error al obtener categorías", message: error.message });
+    handleError(res, error.message, 500, "Error al obtener categorías")
   }
 };
 
@@ -31,8 +32,8 @@ export const create = async (req: Request, res: Response) => {
     const nuevaCategoria = await categoriaService.createCategoria(nombre);
     res.status(201).json(nuevaCategoria);
   } catch (error: any) {
-    if (error.code === 11000) return res.status(409).json({ error: "Ya existe la categoría" });
-    res.status(500).json({ error: "Error al crear categoría", message: error.message });
+    if (error.code === 11000) return handleError(res, "Ya existe categoría", 409);
+    handleError(res, error.message, 500, "Error al crear categoría");
   }
 };
 
@@ -42,14 +43,14 @@ export const update = async (req: Request, res: Response) => {
     const updateData = req.body;
 
     if (!id) {
-      return res.status(400).json({ error: "ID de categoría requerido" });
+      return handleError(res, "ID de categoría requerido", 400);
     }
 
     const categoriaActualizada = await categoriaService.updateCategoria(id, updateData);
     res.json(categoriaActualizada);
   } catch (error: any) {
-    if (error.code === 11000) return res.status(409).json({ error: "Nombre de categoría ya existe" });
-    res.status(500).json({ error: "Error al actualizar categoría", message: error.message });
+    if (error.code === 11000) return handleError(res, "Ya existe categoría", 409);
+    handleError(res, error.message, 500, "Error al actualizar categoría");
   }
 };
 
@@ -57,12 +58,12 @@ export const remove = async (req: Request, res: Response) => {
   try {
     const { id } = req.params;
     if (!id) {
-      return res.status(400).json({ error: "ID de categoría requerido" });
+      return handleError(res, "ID de categoría requerido", 400);
     }
     const result = await categoriaService.deleteCategoria(id);
     res.json(result);
   } catch (error: any) {
-    res.status(500).json({ error: "Error al eliminar categoría", message: error.message });
+    handleError(res, error.message, 500, "Error al eliminar categoría");
   }
 };
 

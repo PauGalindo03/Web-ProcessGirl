@@ -1,5 +1,6 @@
 import type { Request, Response } from "express";
-import { CarritoService } from "../services/carritoService.js";
+import { CarritoService } from "@services/carritoService.js";
+import { handleError } from "@utils/handleError";
 
 // Obtener carrito + totales
 export async function getCarrito(req: Request, res: Response) {
@@ -11,7 +12,7 @@ export async function getCarrito(req: Request, res: Response) {
 
     res.json({ items: carrito, totales });
   } catch (error: any) {
-    res.status(500).json({ error: "Error al obtener carrito", message: error.message });
+    handleError(res, error.message, 500, "Error al obtener carrito");
   }
 }
 
@@ -27,7 +28,7 @@ export async function addItem(req: Request, res: Response) {
 
     res.json({ items: carritoActualizado, totales });
   } catch (error: any) {
-    res.status(500).json({ error: "Error al agregar item", message: error.message });
+    handleError(res, error.message, 500, "Error al agregar item")
   }
 }
 
@@ -39,7 +40,7 @@ export async function removeItem(req: Request, res: Response) {
     const { indexOrId } = req.params;
 
     if (typeof indexOrId === "undefined") {
-      return res.status(400).json({ error: "Falta el parámetro indexOrId" });
+      return handleError(res, "Falta el parámetro indexOrId", 400)
     }
 
     const parsed = isNaN(Number(indexOrId)) ? indexOrId : Number(indexOrId);
@@ -48,7 +49,7 @@ export async function removeItem(req: Request, res: Response) {
 
     res.json({ items: carritoActualizado, totales });
   } catch (error: any) {
-    res.status(500).json({ error: "Error al eliminar item", message: error.message });
+    handleError(res, 500, error.message, "Error al eliminar item")
   }
 }
 
@@ -65,7 +66,7 @@ export async function clearCarrito(req: Request, res: Response) {
       totales: { totalBruto: 0, totalDescuentos: 0, totalFinal: 0 },
     });
   } catch (error: any) {
-    res.status(500).json({ error: "Error al limpiar carrito", message: error.message });
+    handleError(res, 500, error.message, "Error al limpiar carrito")
   }
 }
 
@@ -81,7 +82,7 @@ export async function mergeCarrito(req: Request, res: Response) {
 
     res.json({ items: itemsActualizados, totales });
   } catch (error: any) {
-    res.status(500).json({ error: "Error al combinar carritos", message: error.message });
+    handleError(res, 500, error.message, "Error al combinar carritos")
   }
 }
 

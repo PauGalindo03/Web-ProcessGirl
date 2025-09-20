@@ -1,5 +1,6 @@
 import type { Request, Response } from "express";
-import ConfigService from "../services/configuracionService.js";
+import ConfigService from "@services/configuracionService.js";
+import { handleError } from "@utils/handleError";
 
 // GET configuración
 export const get = async (_req: Request, res: Response) => {
@@ -12,8 +13,7 @@ export const get = async (_req: Request, res: Response) => {
 
     res.json(config);
   } catch (err) {
-    console.error("Error al obtener la configuración:", err);
-    res.status(500).json({ message: "Error interno del servidor al obtener la configuración." });
+    handleError(res, "Error interno del servidor al obtener la configuración", 500)
   }
 };
 
@@ -23,8 +23,7 @@ export const update = async (req: Request, res: Response) => {
     const updatedConfig = await ConfigService.updateConfiguracion(req.body);
     res.json(updatedConfig);
   } catch (err) {
-    console.error("Error al guardar la configuración:", err);
-    res.status(500).json({ message: "Error interno al guardar la configuración." });
+    handleError(res, "Error interno al guardar la configuración.", 500);
   }
 };
 

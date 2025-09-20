@@ -1,6 +1,7 @@
 import type { Request, Response } from "express"
-import faqService from "../services/faqService.js"
-import type { Faq, FaqInput } from "../../../packages/types/faq.js"
+import faqService from "@services/faqService.js"
+import type { Faq, FaqInput } from "@types"
+import { handleError } from "@utils/handleError.js"
 
 interface ContactRequestBody {
   nombre: string
@@ -35,7 +36,7 @@ export const sendContactMessage = async (
         message: "Esta pregunta ya está pendiente de revisión de un administrador.",
       })
     }
-    res.status(500).json({ error: "Error al enviar el mensaje.", details: error.message })
+    handleError(res, error, 500, "enviar el mensaje de contacto")
   }
 }
 
@@ -43,8 +44,8 @@ export const getActiveFAQs = async (_req: Request, res: Response) => {
   try {
     const faqs: Faq[] = await faqService.getActiveFAQs()
     res.json(faqs)
-  } catch (error: any) {
-    res.status(500).json({ error: "Error al obtener FAQs activas." })
+  } catch (error) {
+    handleError(res, error, 500, "obtener FAQs activas")
   }
 }
 
@@ -52,8 +53,8 @@ export const getAllFAQs = async (_req: Request, res: Response) => {
   try {
     const faqs: Faq[] = await faqService.getAllFAQs()
     res.json(faqs)
-  } catch (error: any) {
-    res.status(500).json({ error: "Error al obtener todas las FAQs." })
+  } catch (error) {
+    handleError(res, error, 500, "obtener todas las FAQs")
   }
 }
 
@@ -68,7 +69,7 @@ export const createFAQ = async (req: Request<{}, {}, Partial<Faq>>, res: Respons
     if (error.code === 11000) {
       return res.status(409).json({ error: "Ya existe una FAQ con esa pregunta." })
     }
-    res.status(500).json({ error: "Error al crear FAQ.", details: error.message })
+    handleError(res, error, 500, "crear FAQ")
   }
 }
 
@@ -79,20 +80,20 @@ export const updateFAQ = async (
   try {
     const updatedFaq = await faqService.updateFAQ(req.params.id, req.body as FaqInput)
     res.json(updatedFaq)
-  } catch (error: any) {
-    res.status(500).json({ error: "Error al actualizar FAQ.", details: error.message })
+  } catch (error) {
+    handleError(res, error, 500, "actualizar FAQ")
   }
 }
 
 export const deleteFAQ = async (req: Request<{ id: string }>, res: Response) => {
   try {
-    await faqService.deleteFAQ(req.params.id);
-    res.json({ message: "FAQ eliminada correctamente." });
-  } catch (error: any) {
-    console.error(error);
-    res.status(500).json({ error: "Error al eliminar FAQ.", details: error.message });
+    await faqService.deleteFAQ(req.params.id)
+    res.json({ message: "FAQ eliminada correctamente." })
+  } catch (error) {
+    console.error(error)
+    handleError(res, error, 500, "eliminar FAQ")
   }
-};
+}
 
 export default {
   sendContactMessage,
@@ -101,4 +102,4 @@ export default {
   createFAQ,
   updateFAQ,
   deleteFAQ,
-};
+}

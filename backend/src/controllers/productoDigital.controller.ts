@@ -1,7 +1,8 @@
 // src/controllers/productoDigital.controller.ts
 import type { Request, Response } from "express";
-import * as productoService from "../services/productoDigitalService.js";
-import type { ProductoDigital } from "../../../packages/types/productoDigital.js";
+import type { ProductoDigital } from "@types";
+import * as productoService from "@services/productoDigitalService.js";
+import { handleError } from "@utils/handleError";
 
 // ✅ Crear producto
 export async function create(req: Request, res: Response) {
@@ -15,8 +16,8 @@ export async function create(req: Request, res: Response) {
 
     const producto = await productoService.crearProducto(req.body as ProductoDigital);
     res.status(201).json(producto);
-  } catch (error: any) {
-    res.status(500).json({ error: "Error al crear producto", message: error.message });
+  } catch (error) {
+    handleError(res, error, 500, "crear producto");
   }
 }
 
@@ -25,47 +26,46 @@ export async function getPublicAll(req: Request, res: Response) {
   try {
     const productos = await productoService.obtenerPublicos();
     res.json(productos);
-  } catch (error: any) {
-    res.status(500).json({ error: "Error al obtener productos públicos", message: error.message });
+  } catch (error) {
+    handleError(res, error, 500, "obtener productos públicos");
   }
 }
 
 export const getPublicById = async (req: Request, res: Response) => {
-  try {
-    const { id } = req.params;
-    if (!id) return res.status(400).json({ error: "ID no proporcionado" });
+  const { id } = req.params;
+  if (!id) return res.status(400).json({ error: "ID no proporcionado" });
 
+  try {
     const data = await productoService.getPublicById(id);
     if (!data) return res.status(404).json({ error: "Producto no encontrado" });
 
     res.json(data);
-  } catch (err: any) {
-    res.status(500).json({ error: "Error al obtener producto", message: err.message });
+  } catch (error) {
+    handleError(res, error, 500, "obtener producto por ID");
   }
 };
 
 export const getPublicBySku = async (req: Request, res: Response) => {
-  try {
-    const { sku } = req.params;
-    if (!sku) return res.status(400).json({ error: "SKU no proporcionado" });
+  const { sku } = req.params;
+  if (!sku) return res.status(400).json({ error: "SKU no proporcionado" });
 
+  try {
     const data = await productoService.getPublicById(sku);
     if (!data) return res.status(404).json({ error: "Producto no encontrado" });
 
     res.json(data);
-  } catch (err: any) {
-    res.status(500).json({ error: "Error al obtener producto", message: err.message });
+  } catch (error) {
+    handleError(res, error, 500, "obtener producto por SKU");
   }
 };
-
 
 // ✅ Obtener todos
 export async function getAll(req: Request, res: Response) {
   try {
     const productos = await productoService.obtenerTodos();
     res.json(productos);
-  } catch (error: any) {
-    res.status(500).json({ error: "Error al obtener productos", message: error.message });
+  } catch (error) {
+    handleError(res, error, 500, "obtener todos los productos");
   }
 }
 
@@ -86,8 +86,8 @@ export async function update(req: Request, res: Response) {
     }
 
     res.json({ mensaje: "Producto actualizado", producto: actualizado });
-  } catch (error: any) {
-    res.status(500).json({ error: "Error al actualizar producto", message: error.message });
+  } catch (error) {
+    handleError(res, error, 500, "actualizar producto");
   }
 }
 
@@ -100,9 +100,17 @@ export async function remove(req: Request, res: Response) {
       return;
     }
     res.json({ mensaje: "Producto eliminado y relaciones limpiadas" });
-  } catch (error: any) {
-    res.status(500).json({ error: "Error al eliminar producto", message: error.message });
+  } catch (error) {
+    handleError(res, error, 500, "eliminar producto");
   }
 }
 
-export default { create, getPublicAll, getPublicById, getPublicBySku, getAll, update, remove };
+export default {
+  create,
+  getPublicAll,
+  getPublicById,
+  getPublicBySku,
+  getAll,
+  update,
+  remove,
+};

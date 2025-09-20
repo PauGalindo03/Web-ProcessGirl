@@ -6,8 +6,8 @@
       "@services/*": ["services/*"],
       "@controllers/*": ["controllers/*"],
       "@models/*": ["models/*"],
-      "@types": ["../packages/types/index.ts"],
-      "@types/*": ["../packages/types/*"]
+      "@types": ["../../packages/types/index.ts"],
+      "@types/*": ["../../packages/types/*"]
     },
     "typeRoots": ["./node_modules/@types", "./src/types"],
     "module": "ESNext",
